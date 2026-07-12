@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIMAmaghrib2030 — Le Maroc en mouvement</title>
+<style>
+  :root{
+    --red:#c8102e;
+    --green:#006233;
+    --dark:#111318;
+    --gray-bg:#f4f4f4;
+    --border:#e2e2e2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:Georgia, 'Times New Roman', serif;color:var(--dark);background:#fff;line-height:1.5;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+
+  /* TOP BAR */
+  .topbar{background:var(--dark);color:#fff;font-family:Arial, sans-serif;font-size:12px;padding:6px 20px;display:flex;justify-content:space-between;align-items:center;}
+  .topbar .date{opacity:.75;}
+  .lang-toggle{display:flex;gap:6px;}
+  .lang-toggle button{background:transparent;border:1px solid #666;color:#fff;padding:3px 10px;border-radius:3px;cursor:pointer;font-size:11px;font-family:Arial,sans-serif;}
+  .lang-toggle button.active{background:var(--red);border-color:var(--red);}
+
+  /* HEADER */
+  header.main{padding:18px 20px;border-bottom:3px solid var(--dark);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
+  .logo{font-family:Arial, sans-serif;font-weight:900;font-size:30px;letter-spacing:-1px;}
+  .logo span.red{color:var(--red);}
+  .logo span.green{color:var(--green);}
+  .tagline{font-family:Arial, sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:2px;color:#666;margin-top:2px;}
+
+  nav.main-nav{background:var(--red);font-family:Arial, sans-serif;}
+  nav.main-nav ul{list-style:none;display:flex;flex-wrap:wrap;}
+  nav.main-nav a{display:block;color:#fff;padding:12px 18px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;}
+  nav.main-nav a:hover{background:rgba(0,0,0,.2);}
+
+  /* BREAKING TICKER */
+  .ticker{background:var(--green);color:#fff;font-family:Arial,sans-serif;font-size:13px;padding:8px 0;overflow:hidden;white-space:nowrap;position:relative;}
+  .ticker .label{background:var(--dark);padding:8px 14px;position:absolute;left:0;top:0;bottom:0;display:flex;align-items:center;font-weight:700;z-index:2;}
+  .ticker-track{display:inline-block;padding-left:150px;animation:scroll 32s linear infinite;}
+  @keyframes scroll{0%{transform:translateX(0);}100%{transform:translateX(-100%);}}
+
+  /* HERO */
+  .hero{display:grid;grid-template-columns:2fr 1fr;gap:2px;background:var(--border);margin:20px;}
+  .hero-main{background:#fff;position:relative;}
+  .hero-main .imgbox{height:380px;background:linear-gradient(135deg,var(--red),var(--dark));display:flex;align-items:center;justify-content:center;color:#fff;font-family:Arial,sans-serif;font-size:14px;text-align:center;padding:20px;}
+  .hero-main .cap{padding:16px;}
+  .hero-main h1{font-size:32px;line-height:1.15;margin-bottom:10px;}
+  .hero-main p{color:#444;font-size:16px;}
+  .tag{display:inline-block;background:var(--red);color:#fff;font-family:Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;padding:3px 8px;margin-bottom:8px;letter-spacing:.5px;}
+  .tag.green{background:var(--green);}
+  .tag.dark{background:var(--dark);}
+
+  .hero-side{display:flex;flex-direction:column;gap:2px;}
+  .side-item{background:#fff;padding:14px;border-bottom:1px solid var(--border);}
+  .side-item h3{font-size:16px;margin-bottom:6px;}
+  .side-item p{font-size:13px;color:#555;}
+
+  /* SECTIONS */
+  .section{margin:40px 20px;}
+  .section-head{display:flex;align-items:center;gap:12px;border-bottom:3px solid var(--dark);padding-bottom:8px;margin-bottom:20px;}
+  .section-head h2{font-family:Arial,sans-serif;font-size:22px;text-transform:uppercase;letter-spacing:.5px;}
+  .section-head .bar{width:6px;height:26px;background:var(--red);}
+  .section-head.green .bar{background:var(--green);}
+  .section-head.dark .bar{background:var(--dark);}
+
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .card{border:1px solid var(--border);}
+  .card .imgbox{height:160px;background:linear-gradient(135deg,#333,#666);color:#fff;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;font-size:12px;text-align:center;padding:10px;}
+  .card .body{padding:14px;}
+  .card h3{font-size:17px;margin-bottom:8px;}
+  .card p{font-size:13px;color:#555;}
+  .card .meta{font-family:Arial,sans-serif;font-size:11px;color:#888;margin-top:10px;text-transform:uppercase;}
+
+  .stats-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--dark);color:#fff;font-family:Arial,sans-serif;text-align:center;margin:40px 20px;}
+  .stats-strip div{padding:24px 10px;}
+  .stats-strip .num{font-size:30px;font-weight:900;color:#ffcf4d;}
+  .stats-strip .lbl{font-size:12px;text-transform:uppercase;margin-top:6px;opacity:.85;}
+
+  /* VIDEO SECTION */
+  .video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .video-card{position:relative;background:#000;color:#fff;}
+  .video-card .imgbox{height:180px;background:linear-gradient(135deg,#0d3b26,#000);display:flex;align-items:center;justify-content:center;opacity:.85;}
+  .play{width:54px;height:54px;border-radius:50%;background:rgba(255,255,255,.15);border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:20px;}
+  .video-card .capv{padding:12px;font-family:Arial,sans-serif;font-size:13px;}
+
+  footer{background:var(--dark);color:#ccc;font-family:Arial,sans-serif;padding:40px 20px;margin-top:60px;}
+  .footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;max-width:1200px;margin:0 auto;}
+  footer h4{color:#fff;font-size:14px;margin-bottom:12px;text-transform:uppercase;}
+  footer ul{list-style:none;font-size:13px;line-height:2;}
+  footer ul a:hover{color:#fff;}
+  .footer-bottom{text-align:center;font-size:12px;opacity:.6;margin-top:30px;padding-top:20px;border-top:1px solid #333;}
+
+  @media(max-width:900px){
+    .hero{grid-template-columns:1fr;}
+    .grid3{grid-template-columns:1fr;}
+    .stats-strip{grid-template-columns:repeat(2,1fr);}
+    .video-grid{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:repeat(2,1fr);}
+    nav.main-nav ul{overflow-x:auto;}
+  }
+
+  [data-en]{display:none;}
+  html.lang-en [data-fr]{display:none;}
+  html.lang-en [data-en]{display:inline;}
+  html.lang-en [data-en].block{display:block;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="date" id="dateLine"></div>
+  <div class="lang-toggle">
+    <button id="btnFr" class="active" onclick="setLang('fr')">FR</button>
+    <button id="btnEn" onclick="setLang('en')">EN</button>
+  </div>
+</div>
+
+<header class="main">
+  <div>
+    <div class="logo"><span class="red">DIMA</span><span class="green">maghrib</span>2030</div>
+    <div class="tagline">
+      <span data-fr>Magazine du Maroc — Tourisme, Investissement, Sport</span>
+      <span data-en>Morocco Magazine — Tourism, Investment, Sport</span>
+    </div>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <ul>
+    <li><a href="#accueil"><span data-fr>Accueil</span><span data-en>Home</span></a></li>
+    <li><a href="#tourisme"><span data-fr>Tourisme</span><span data-en>Tourism</span></a></li>
+    <li><a href="#investissement"><span data-fr>Investissement</span><span data-en>Investment</span></a></li>
+    <li><a href="#sport"><span data-fr>Sport &amp; Mondial 2030</span><span data-en>Sport &amp; World Cup 2030</span></a></li>
+    <li><a href="#videos"><span data-fr>Vidéos</span><span data-en>Videos</span></a></li>
+    <li><a href="#a-propos"><span data-fr>À propos</span><span data-en>About</span></a></li>
+  </ul>
+</nav>
+
+<div class="ticker">
+  <div class="label"><span data-fr>DERNIÈRE HEURE</span><span data-en>BREAKING</span></div>
+  <div class="ticker-track">
+    <span data-fr>🔴 Le Maroc, l'Espagne et le Portugal confirment 6 stades marocains pour la Coupe du Monde 2030 — Les IDE au Maroc bondissent de 91% en 2025 selon la CNUCED — Objectif de 26 millions de touristes d'ici 2030 — Le stade Hassan II à Casablanca visera 115 000 places, le plus grand du Mondial —</span>
+    <span data-en>🔴 Morocco, Spain and Portugal confirm 6 Moroccan stadiums for the 2030 World Cup — Morocco's FDI jumps 91% in 2025 according to UNCTAD — Target of 26 million tourists by 2030 — Hassan II Stadium in Casablanca to hold 115,000 seats, the World Cup's largest —</span>
+  </div>
+</div>
+
+<div class="hero" id="accueil">
+  <div class="hero-main">
+    <div class="imgbox">
+      <span data-fr>[Image : Stade Hassan II, Casablanca — vision architecturale]</span>
+      <span data-en>[Image: Hassan II Stadium, Casablanca — architectural vision]</span>
+    </div>
+    <div class="cap">
+      <span class="tag"><span data-fr>Mondial 2030</span><span data-en>World Cup 2030</span></span>
+      <h1>
+        <span data-fr>Le Maroc, terre d'accueil du Mondial 2030 : une opportunité historique</span>
+        <span data-en>Morocco, host nation of the 2030 World Cup: a historic opportunity</span>
+      </h1>
+      <p>
+        <span data-fr>Avec l'Espagne et le Portugal, le Maroc accueillera six stades dans six villes, dont le futur stade Hassan II de 115 000 places près de Casablanca — le plus grand du tournoi. Un tremplin unique pour le tourisme, les infrastructures et l'image du pays.</span>
+        <span data-en>Alongside Spain and Portugal, Morocco will host six stadiums in six cities, including the future 115,000-seat Hassan II Stadium near Casablanca — the largest of the tournament. A unique springboard for tourism, infrastructure and the country's global image.</span>
+      </p>
+    </div>
+  </div>
+  <div class="hero-side">
+    <div class="side-item">
+      <span class="tag green"><span data-fr>Investissement</span><span data-en>Investment</span></span>
+      <h3><span data-fr>Les IDE au Maroc bondissent de 91% en 2025</span><span data-en>Morocco's FDI jumps 91% in 2025</span></h3>
+      <p><span data-fr>Selon la CNUCED, les flux d'investissements directs étrangers ont atteint 3,3 milliards de dollars, portés par l'automobile et les batteries.</span><span data-en>According to UNCTAD, foreign direct investment inflows reached $3.3 billion, driven by the automotive and battery sectors.</span></p>
+    </div>
+    <div class="side-item">
+      <span class="tag"><span data-fr>Tourisme</span><span data-en>Tourism</span></span>
+      <h3><span data-fr>Cap sur 26 millions de touristes d'ici 2030</span><span data-en>Aiming for 26 million tourists by 2030</span></h3>
+      <p><span data-fr>La feuille de route touristique 2023-2026, dotée de 6,1 milliards de dirhams, mise sur neuf pôles thématiques.</span><span data-en>The 2023-2026 tourism roadmap, backed by 6.1 billion dirhams, focuses on nine thematic clusters.</span></p>
+    </div>
+    <div class="side-item">
+      <span class="tag dark"><span data-fr>Infrastructures</span><span data-en>Infrastructure</span></span>
+      <h3><span data-fr>Un corridor touristique sans frontières</span><span data-en>A borderless tourism corridor</span></h3>
+      <p><span data-fr>Maroc, Espagne et Portugal visent 30 millions de visiteurs annuels grâce à une coopération régionale renforcée.</span><span data-en>Morocco, Spain and Portugal aim for 30 million annual visitors through strengthened regional cooperation.</span></p>
+    </div>
+  </div>
+</div>
+
+<div class="stats-strip">
+  <div><div class="num">26M</div><div class="lbl"><span data-fr>Touristes visés d'ici 2030</span><span data-en>Tourists targeted by 2030</span></div></div>
+  <div><div class="num">+91%</div><div class="lbl"><span data-fr>Croissance des IDE en 2025</span><span data-en>FDI growth in 2025</span></div></div>
+  <div><div class="num">6</div><div class="lbl"><span data-fr>Stades marocains au Mondial 2030</span><span data-en>Moroccan stadiums for World Cup 2030</span></div></div>
+  <div><div class="num">115K</div><div class="lbl"><span data-fr>Places au stade Hassan II</span><span data-en>Seats at Hassan II Stadium</span></div></div>
+</div>
+
+<section class="section" id="tourisme">
+  <div class="section-head">
+    <div class="bar"></div>
+    <h2><span data-fr>Tourisme</span><span data-en>Tourism</span></h2>
+  </div>
+  <div class="grid3">
+    <div class="card">
+      <div class="imgbox"><span data-fr>[Marrakech — patrimoine &amp; expérience client]</span><span data-en>[Marrakech — heritage &amp; guest experience]</span></div>
+      <div class="body">
+        <h3><span data-fr>La nouvelle feuille de route touristique 2023-2026</span><span data-en>The new 2023-2026 tourism roadmap</span></h3>
+        <p><span data-fr>Élaborée avec le secteur privé, elle s'articule autour de neuf pôles thématiques et cinq axes transversaux pour réinventer l'offre marocaine centrée sur l'expérience client.</span><span data-en>Developed with the private sector, it is built around nine thematic clusters and five cross-cutting priorities to reinvent Morocco's offering around the guest experience.</span></p>
+        <div class="meta"><span data-fr>Ministère du Tourisme</span><span data-en>Ministry of Tourism</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgbox"><span data-fr>[Cap Hospitality — financement des projets]</span><span data-en>[Cap Hospitality — project financing]</span></div>
+      <div class="body">
+        <h3><span data-fr>8 milliards de dollars pour transformer le secteur</span><span data-en>$8 billion to transform the sector</span></h3>
+        <p><span data-fr>Le programme Cap Hospitality et une nouvelle charte de l'investissement offrent jusqu'à 30% de soutien financier aux projets touristiques.</span><span data-en>The Cap Hospitality programme and a new investment charter offer up to 30% financial support for tourism projects.</span></p>
+        <div class="meta"><span data-fr>Économie &amp; Finances</span><span data-en>Economy &amp; Finance</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgbox"><span data-fr>[Nouvelles routes aériennes 2026]</span><span data-en>[New air routes 2026]</span></div>
+      <div class="body">
+        <h3><span data-fr>7,74 millions de sièges pour l'été 2026</span><span data-en>7.74 million seats for summer 2026</span></h3>
+        <p><span data-fr>+13% de capacité aérienne, 52 nouvelles routes internationales et de nouvelles bases à Rabat, Marrakech et Tétouan.</span><span data-en>+13% air capacity, 52 new international routes, and new airline bases in Rabat, Marrakech and Tetouan.</span></p>
+        <div class="meta">ONMT</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="investissement">
+  <div class="section-head green">
+    <div class="bar"></div>
+    <h2><span data-fr>Investissement Étranger</span><span data-en>Foreign Investment</span></h2>
+  </div>
+  <div class="grid3">
+    <div class="card">
+      <div class="imgbox"><span data-fr>[Usine automobile — Kénitra]</span><span data-en>[Car plant — Kénitra]</span></div>
+      <div class="body">
+        <h3><span data-fr>Stellantis investit 1,5 milliard de dollars</span><span data-en>Stellantis invests $1.5 billion</span></h3>
+        <p><span data-fr>L'automobile reste le moteur des IDE marocains, portée par un projet industriel majeur du constructeur.</span><span data-en>The automotive industry remains the engine of Morocco's FDI, driven by this major manufacturer's industrial project.</span></p>
+        <div class="meta"><span data-fr>Industrie</span><span data-en>Industry</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgbox"><span data-fr>[Batteries &amp; énergies renouvelables — Jorf Lasfar]</span><span data-en>[Batteries &amp; renewables — Jorf Lasfar]</span></div>
+      <div class="body">
+        <h3><span data-fr>Le Maroc, hub africain des batteries</span><span data-en>Morocco, Africa's battery hub</span></h3>
+        <p><span data-fr>Les projets COBCO à Jorf Lasfar et Gotion à Kénitra confirment l'essor de la filière batteries adossée aux énergies renouvelables.</span><span data-en>The COBCO project in Jorf Lasfar and Gotion's plant in Kénitra confirm the rise of a battery industry built on renewable energy.</span></p>
+        <div class="meta"><span data-fr>Énergie</span><span data-en>Energy</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgbox"><span data-fr>[Classement régional des IDE]</span><span data-en>[Regional FDI ranking]</span></div>
+      <div class="body">
+        <h3><span data-fr>2e destination d'IDE en Afrique du Nord</span><span data-en>2nd top FDI destination in North Africa</span></h3>
+        <p><span data-fr>Selon la CNUCED, le Maroc devance l'Algérie et la Tunisie et se classe parmi les dix premières destinations d'investissement en Afrique.</span><span data-en>According to UNCTAD, Morocco overtakes Algeria and Tunisia and ranks among Africa's top ten investment destinations.</span></p>
+        <div class="meta">UNCTAD</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="sport">
+  <div class="section-head dark">
+    <div class="bar"></div>
+    <h2><span data-fr>Sport &amp; Mondial 2030</span><span data-en>Sport &amp; World Cup 2030</span></h2>
+  </div>
+  <div class="grid3">
+    <div class="card">
+      <div class="imgbox"><span data-fr>[Stade Hassan II — le plus grand du Mondial]</span><span data-en>[Hassan II Stadium — the World Cup's largest]</span></div>
+      <div class="body">
+        <h3><span data-fr>Un stade de 115 000 places près de Casablanca</span><span data-en>A 115,000-seat stadium near Casablanca</span></h3>
+        <p><span data-fr>La fédération marocaine a soumis les plans du plus grand stade du tournoi, qui accueillera notamment des rencontres majeures du Mondial 2030.</span><span data-en>The Moroccan football federation has submitted plans for the tournament's largest stadium, set to host major 2030 World Cup matches.</span></p>
+        <div class="meta">FIFA</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgbox"><span data-fr>[Stade Adrar, Agadir — extension à 70 000 places]</span><span data-en>[Adrar Stadium, Agadir — expansion to 70,000 seats]</span></div>
+      <div class="body">
+        <h3><span data-fr>Six stades marocains, six villes hôtes</span><span data-en>Six Moroccan stadiums, six host cities</span></h3>
+        <p><span data-fr>Aux côtés de l'Espagne (11 stades, 9 villes) et du Portugal (3 stades, 2 villes), le Maroc modernise ses infrastructures sportives à l'échelle nationale.</span><span data-en>Alongside Spain (11 stadiums, 9 cities) and Portugal (3 stadiums, 2 cities), Morocco is modernising sports infrastructure nationwide.</span></p>
+        <div class="meta">Olympics.com</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgbox"><span data-fr>[Héritage post-Mondial — usages multiples]</span><span data-en>[Post-World Cup legacy — multi-use venues]</span></div>
+      <div class="body">
+        <h3><span data-fr>Un héritage durable au-delà du ballon rond</span><span data-en>A lasting legacy beyond football</span></h3>
+        <p><span data-fr>Conçus comme des sites polyvalents, les stades marocains accueilleront concerts, salons et événements culturels bien après le coup de sifflet final.</span><span data-en>Designed as multi-purpose venues, Morocco's stadiums will host concerts, trade fairs and cultural events long after the final whistle.</span></p>
+        <div class="meta">Morocco Beat</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="videos">
+  <div class="section-head">
+    <div class="bar"></div>
+    <h2><span data-fr>Vidéos</span><span data-en>Videos</span></h2>
+  </div>
+  <div class="video-grid">
+    <div class="video-card">
+      <div class="imgbox"><div class="play">▶</div></div>
+      <div class="capv"><span data-fr>Reportage : dans les coulisses du futur stade Hassan II</span><span data-en>Report: behind the scenes of the future Hassan II Stadium</span></div>
+    </div>
+    <div class="video-card">
+      <div class="imgbox"><div class="play">▶</div></div>
+      <div class="capv"><span data-fr>Investir au Maroc : entretien avec des industriels étrangers</span><span data-en>Investing in Morocco: interview with foreign manufacturers</span></div>
+    </div>
+    <div class="video-card">
+      <div class="imgbox"><div class="play">▶</div></div>
+      <div class="capv"><span data-fr>Marrakech, Agadir, Rabat : itinéraires pour 2030</span><span data-en>Marrakech, Agadir, Rabat: itineraries for 2030</span></div>
+    </div>
+  </div>
+</section>
+
+<footer id="a-propos">
+  <div class="footer-grid">
+    <div>
+      <h4>DIMAmaghrib2030</h4>
+      <p style="font-size:13px;line-height:1.6;">
+        <span data-fr>Le magazine électronique dédié au Maroc en mouvement : tourisme, investissement étranger et sport, à l'horizon de la Coupe du Monde 2030.</span>
+        <span data-en>The electronic magazine dedicated to Morocco in motion: tourism, foreign investment and sport, on the horizon of the 2030 World Cup.</span>
+      </p>
+    </div>
+    <div>
+      <h4><span data-fr>Rubriques</span><span data-en>Sections</span></h4>
+      <ul>
+        <li><a href="#tourisme"><span data-fr>Tourisme</span><span data-en>Tourism</span></a></li>
+        <li><a href="#investissement"><span data-fr>Investissement</span><span data-en>Investment</span></a></li>
+        <li><a href="#sport"><span data-fr>Sport &amp; Mondial 2030</span><span data-en>Sport &amp; World Cup 2030</span></a></li>
+        <li><a href="#videos"><span data-fr>Vidéos</span><span data-en>Videos</span></a></li>
+      </ul>
+    </div>
+    <div>
+      <h4><span data-fr>Sources</span><span data-en>Sources</span></h4>
+      <ul style="font-size:12px;">
+        <li>Maroc.ma — <span data-fr>Feuille de route touristique</span><span data-en>Tourism roadmap</span></li>
+        <li>UNCTAD — World Investment Report 2026</li>
+        <li>Olympics.com — 2030 FIFA World Cup venues</li>
+        <li>Morocco World News</li>
+      </ul>
+    </div>
+    <div>
+      <h4><span data-fr>Contact</span><span data-en>Contact</span></h4>
+      <ul>
+        <li>redaction@dimamaghrib2030.com</li>
+        <li>Casablanca, Maroc</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 DIMAmaghrib2030.com — <span data-fr>Tous droits réservés</span><span data-en>All rights reserved</span>
+  </div>
+</footer>
+
+<script>
+  function setLang(lang){
+    document.documentElement.classList.toggle('lang-en', lang === 'en');
+    document.getElementById('btnFr').classList.toggle('active', lang === 'fr');
+    document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+    localStorage.setItem('dima_lang', lang);
+    updateDate(lang);
+  }
+  function updateDate(lang){
+    const d = new Date();
+    const opts = {weekday:'long', year:'numeric', month:'long', day:'numeric'};
+    const locale = lang === 'en' ? 'en-US' : 'fr-FR';
+    document.getElementById('dateLine').textContent = d.toLocaleDateString(locale, opts);
+  }
+  updateDate('fr');
+</script>
+
+</body>
+</html>

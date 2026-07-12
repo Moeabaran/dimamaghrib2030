@@ -148,7 +148,7 @@
     updateDate(lang);
   }
   function updateDate(lang){
-    var d = new Date("2026-07-12");
+    var d = new Date(2026, 6, 12);
     var opts = {weekday:'long', year:'numeric', month:'long', day:'numeric'};
     var locale = lang === 'en' ? 'en-US' : 'fr-FR';
     document.getElementById('dateLine').textContent = d.toLocaleDateString(locale, opts);

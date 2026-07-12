@@ -52,6 +52,19 @@
   .tag{display:inline-block;background:var(--red);color:#fff;font-family:Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;padding:3px 8px;margin-bottom:8px;letter-spacing:.5px;}
   .tag.green{background:var(--green);}
   .tag.dark{background:var(--dark);}
+  .tag.amber{background:#b8860b;}
+  .section-head.amber .bar{background:#b8860b;}
+
+  /* TODAY'S ARTICLES STRIP */
+  .today-strip{margin:40px 20px;}
+  .today-strip .section-head{border-bottom:3px solid var(--dark);}
+  .today-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  .today-card{border:1px solid var(--border);display:flex;flex-direction:column;transition:box-shadow .15s;}
+  .today-card:hover{box-shadow:0 4px 14px rgba(0,0,0,.12);}
+  .today-card .imgbox{height:110px;background:linear-gradient(135deg,#333,#666);color:#fff;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;font-size:11px;text-align:center;padding:8px;}
+  .today-card .body{padding:12px;flex:1;display:flex;flex-direction:column;}
+  .today-card h3{font-size:15px;margin-bottom:8px;line-height:1.3;}
+  .today-card .readmore{margin-top:auto;font-family:Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;color:var(--red);}
 
   .hero-side{display:flex;flex-direction:column;gap:2px;}
   .side-item{background:#fff;padding:14px;border-bottom:1px solid var(--border);}
@@ -99,6 +112,7 @@
     .stats-strip{grid-template-columns:repeat(2,1fr);}
     .video-grid{grid-template-columns:1fr;}
     .footer-grid{grid-template-columns:repeat(2,1fr);}
+    .today-grid{grid-template-columns:repeat(2,1fr);}
     nav.main-nav ul{overflow-x:auto;}
   }
 
@@ -134,6 +148,7 @@
     <li><a href="#tourisme"><span data-fr>Tourisme</span><span data-en>Tourism</span></a></li>
     <li><a href="#investissement"><span data-fr>Investissement</span><span data-en>Investment</span></a></li>
     <li><a href="#sport"><span data-fr>Sport &amp; Mondial 2030</span><span data-en>Sport &amp; World Cup 2030</span></a></li>
+    <li><a href="#insider"><span data-fr>Insider Morocco</span><span data-en>Insider Morocco</span></a></li>
     <li><a href="#videos"><span data-fr>Vidéos</span><span data-en>Videos</span></a></li>
     <li><a href="#a-propos"><span data-fr>À propos</span><span data-en>About</span></a></li>
   </ul>
@@ -189,6 +204,47 @@
   <div><div class="num">+91%</div><div class="lbl"><span data-fr>Croissance des IDE en 2025</span><span data-en>FDI growth in 2025</span></div></div>
   <div><div class="num">6</div><div class="lbl"><span data-fr>Stades marocains au Mondial 2030</span><span data-en>Moroccan stadiums for World Cup 2030</span></div></div>
   <div><div class="num">115K</div><div class="lbl"><span data-fr>Places au stade Hassan II</span><span data-en>Seats at Hassan II Stadium</span></div></div>
+</div>
+
+<div class="today-strip">
+  <div class="section-head">
+    <div class="bar"></div>
+    <h2><span data-fr>Les articles du jour</span><span data-en>Today's articles</span></h2>
+  </div>
+  <div class="today-grid">
+    <div class="today-card">
+      <div class="imgbox"><span data-fr>[Aéroport &amp; vols été 2026]</span><span data-en>[Airport &amp; summer 2026 flights]</span></div>
+      <div class="body">
+        <span class="tag"><span data-fr>Tourisme</span><span data-en>Tourism</span></span>
+        <h3><span data-fr>7,7 millions de visiteurs en 5 mois, un record historique</span><span data-en>7.7 million tourists in 5 months — a historic record</span></h3>
+        <a href="articles/2026-07-12-tourisme-record-visiteurs.html" class="readmore"><span data-fr>Lire l'article &rarr;</span><span data-en>Read article &rarr;</span></a>
+      </div>
+    </div>
+    <div class="today-card">
+      <div class="imgbox"><span data-fr>[Usine de batteries — Tanger]</span><span data-en>[Battery gigafactory — Tangier]</span></div>
+      <div class="body">
+        <span class="tag green"><span data-fr>Investissement</span><span data-en>Investment</span></span>
+        <h3><span data-fr>Gotion : le Maroc devient un hub chinois des batteries (1,3 Md$)</span><span data-en>Gotion: Morocco becomes a $1.3B Chinese battery hub</span></h3>
+        <a href="articles/2026-07-12-investissement-gotion-batteries.html" class="readmore"><span data-fr>Lire l'article &rarr;</span><span data-en>Read article &rarr;</span></a>
+      </div>
+    </div>
+    <div class="today-card">
+      <div class="imgbox"><span data-fr>[Grand Stade Hassan II]</span><span data-en>[Grand Stade Hassan II]</span></div>
+      <div class="body">
+        <span class="tag dark"><span data-fr>Sport &amp; Mondial 2030</span><span data-en>Sport &amp; World Cup 2030</span></span>
+        <h3><span data-fr>Le Maroc va-t-il rafler la finale du Mondial 2030 à l'Espagne ?</span><span data-en>Could Morocco steal the 2030 World Cup final from Spain?</span></h3>
+        <a href="articles/2026-07-12-mondial-2030-finale-casablanca.html" class="readmore"><span data-fr>Lire l'article &rarr;</span><span data-en>Read article &rarr;</span></a>
+      </div>
+    </div>
+    <div class="today-card">
+      <div class="imgbox"><span data-fr>[Médina &amp; bons plans locaux]</span><span data-en>[Medina &amp; local tips]</span></div>
+      <div class="body">
+        <span class="tag amber">Insider Morocco</span>
+        <h3><span data-fr>Arnaques au Maroc en 2026 : ce que les guides ne vous disent pas</span><span data-en>Morocco scams 2026: what guidebooks won't tell you</span></h3>
+        <a href="articles/2026-07-12-insider-morocco-arnaques-2026.html" class="readmore"><span data-fr>Lire l'article &rarr;</span><span data-en>Read article &rarr;</span></a>
+      </div>
+    </div>
+  </div>
 </div>
 
 <section class="section" id="tourisme">
@@ -290,6 +346,28 @@
   </div>
 </section>
 
+<section class="section" id="insider">
+  <div class="section-head amber">
+    <div class="bar"></div>
+    <h2>Insider Morocco</h2>
+  </div>
+  <p style="font-family:Arial,sans-serif;font-size:13px;color:#666;margin:-10px 0 20px;">
+    <span data-fr>Le guide gratuit d'un Marocain natif : les vrais bons plans, et les pièges à éviter.</span>
+    <span data-en>The free guide by a Moroccan native: the real good plans, and the traps to avoid.</span>
+  </p>
+  <div class="grid3">
+    <div class="card">
+      <div class="imgbox"><span data-fr>[Médina de Marrakech — vie locale]</span><span data-en>[Marrakech medina — local life]</span></div>
+      <div class="body">
+        <h3><span data-fr>Arnaques au Maroc en 2026 : ce que les guides touristiques ne vous disent pas</span><span data-en>Morocco Scams in 2026: What Guidebooks Still Won't Tell You</span></h3>
+        <p><span data-fr>Faux guides, henné, taxis, nouvelles arnaques IA et QR codes : le vrai topo, avec les bons plans en prime.</span><span data-en>Fake guides, henna, taxis, new AI and QR-code scams: the real talk, plus genuine good plans.</span></p>
+        <div class="meta"><span data-fr>Guide local</span><span data-en>Local guide</span></div>
+        <a href="articles/2026-07-12-insider-morocco-arnaques-2026.html" class="readmore" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;color:var(--red);"><span data-fr>Lire l'article &rarr;</span><span data-en>Read article &rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="videos">
   <div class="section-head">
     <div class="bar"></div>
@@ -326,6 +404,7 @@
         <li><a href="#tourisme"><span data-fr>Tourisme</span><span data-en>Tourism</span></a></li>
         <li><a href="#investissement"><span data-fr>Investissement</span><span data-en>Investment</span></a></li>
         <li><a href="#sport"><span data-fr>Sport &amp; Mondial 2030</span><span data-en>Sport &amp; World Cup 2030</span></a></li>
+        <li><a href="#insider">Insider Morocco</a></li>
         <li><a href="#videos"><span data-fr>Vidéos</span><span data-en>Videos</span></a></li>
       </ul>
     </div>

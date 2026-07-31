@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#000000"/><stop offset="1" stop-color="#111318"/>
+</linearGradient>
+<pattern id="zellige" width="60" height="60" patternUnits="userSpaceOnUse">
+<path d="M30 4 L36 24 L56 30 L36 36 L30 56 L24 36 L4 30 L24 24 Z" fill="#ffffff" opacity="0.05"/>
+</pattern>
+</defs>
+<rect width="800" height="450" fill="url(#bg)"/>
+<rect width="800" height="450" fill="url(#zellige)"/>
+<circle cx="400" cy="205" r="150" fill="#ffffff" opacity="0.06"/>
+<g transform="translate(300,105) scale(1.0)"><g fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M65 40 H135 V80 Q135 115 100 122 Q65 115 65 80 Z" fill="rgba(255,255,255,.15)"/>
+<path d="M65 50 H40 Q40 85 68 92" opacity=".8"/>
+<path d="M135 50 H160 Q160 85 132 92" opacity=".8"/>
+<line x1="100" y1="122" x2="100" y2="145"/>
+<rect x="72" y="145" width="56" height="16" rx="3" fill="rgba(255,255,255,.3)"/>
+</g></g>
+<rect x="0" y="405" width="800" height="45" fill="rgba(0,0,0,0.35)"/>
+<rect x="0" y="405" width="8" height="45" fill="#ffffff" opacity="0.9"/>
+<text x="24" y="434" font-family="Arial, sans-serif" font-size="19" font-weight="bold" fill="#ffffff" letter-spacing="2">SPORT &amp; MONDIAL 2030</text>
+<text x="776" y="434" text-anchor="end" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" opacity="0.8">DIMAmaghrib2030</text>
+</svg>

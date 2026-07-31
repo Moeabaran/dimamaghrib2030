@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#6e5006"/><stop offset="1" stop-color="#b8860b"/>
+</linearGradient>
+<pattern id="zellige" width="60" height="60" patternUnits="userSpaceOnUse">
+<path d="M30 4 L36 24 L56 30 L36 36 L30 56 L24 36 L4 30 L24 24 Z" fill="#ffffff" opacity="0.05"/>
+</pattern>
+</defs>
+<rect width="800" height="450" fill="url(#bg)"/>
+<rect width="800" height="450" fill="url(#zellige)"/>
+<circle cx="400" cy="205" r="150" fill="#ffffff" opacity="0.06"/>
+<g transform="translate(300,105) scale(1.0)"><g fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M70 45 Q92 80 70 100 Q48 80 70 45 Z" fill="rgba(255,255,255,.2)"/>
+<path d="M130 65 Q152 100 130 120 Q108 100 130 65 Z" fill="rgba(255,255,255,.2)"/>
+<path d="M100 110 Q118 138 100 155 Q82 138 100 110 Z" fill="rgba(255,255,255,.2)"/>
+<path d="M30 175 q20 -12 40 0 t40 0 t40 0" opacity=".8"/>
+</g></g>
+<rect x="0" y="405" width="800" height="45" fill="rgba(0,0,0,0.35)"/>
+<rect x="0" y="405" width="8" height="45" fill="#ffffff" opacity="0.9"/>
+<text x="24" y="434" font-family="Arial, sans-serif" font-size="19" font-weight="bold" fill="#ffffff" letter-spacing="2">INSIDER MOROCCO</text>
+<text x="776" y="434" text-anchor="end" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" opacity="0.8">DIMAmaghrib2030</text>
+</svg>

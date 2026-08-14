@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#b8860b"/>
+<stop offset="1" stop-color="#5e4404"/>
+</linearGradient>
+</defs>
+<rect width="1200" height="400" fill="url(#g)"/>
+<path d="M850 120 Q870 80 920 90 Q935 55 985 65 Q1030 55 1045 95 Q1095 100 1085 145 Q1090 175 1050 180 L880 180 Q840 170 850 120 Z" fill="#ffffff" opacity="0.35"/><polygon points="960,190 920,260 955,260 915,345 1000,240 960,240 995,190" fill="#ffcf4d" opacity="0.95"/><g stroke="#ffffff" stroke-width="6" opacity="0.5" stroke-linecap="round"><line x1="870" y1="200" x2="855" y2="240"/><line x1="1030" y1="200" x2="1015" y2="240"/><line x1="1075" y1="190" x2="1060" y2="230"/></g>
+<text x="60" y="130" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="6" fill="#ffffff" opacity="0.85">INSIDER MOROCCO</text>
+<text x="60" y="205" font-family="Arial, sans-serif" font-size="54" font-weight="900" fill="#ffffff">ORAGES SUR</text>
+<text x="60" y="270" font-family="Arial, sans-serif" font-size="54" font-weight="900" fill="#ffffff" opacity="0.92">L'ATLAS</text>
+<text x="60" y="340" font-family="Georgia, serif" font-size="20" font-style="italic" fill="#ffffff" opacity="0.75">DIMAmaghrib2030 — 14.08.2026</text>
+</svg>

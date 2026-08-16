@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon astuce de Marocain : ces 4 applis qui m'évitent (et t'éviteront) la galère du taxi | DIMAmaghrib2030</title>
+<meta name="description" content="Roby, Careem, Heetch, Yassir : mon avis honnête de Marocain sur les 4 applis qui rendent les taxis simples, sans négociation, dans 6 villes.">
+<style>
+  :root{--red:#c8102e;--green:#006233;--dark:#111318;--gray-bg:#f4f4f4;--border:#e2e2e2;--accent:#b8860b;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:Georgia, 'Times New Roman', serif;color:var(--dark);background:#fff;line-height:1.6;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .topbar{background:var(--dark);color:#fff;font-family:Arial, sans-serif;font-size:12px;padding:6px 20px;display:flex;justify-content:space-between;align-items:center;}
+  .topbar .date{opacity:.75;}
+  .lang-toggle{display:flex;gap:6px;}
+  .lang-toggle button{background:transparent;border:1px solid #666;color:#fff;padding:3px 10px;border-radius:3px;cursor:pointer;font-size:11px;font-family:Arial,sans-serif;}
+  .lang-toggle button.active{background:var(--red);border-color:var(--red);}
+  header.main{padding:18px 20px;border-bottom:3px solid var(--dark);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
+  .logo{font-family:Arial, sans-serif;font-weight:900;font-size:30px;letter-spacing:-1px;}
+  .logo span.red{color:var(--red);}
+  .logo span.green{color:var(--green);}
+  .tagline{font-family:Arial, sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:2px;color:#666;margin-top:2px;}
+  nav.main-nav{background:var(--red);font-family:Arial, sans-serif;}
+  nav.main-nav ul{list-style:none;display:flex;flex-wrap:wrap;}
+  nav.main-nav a{display:block;color:#fff;padding:12px 18px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;}
+  nav.main-nav a:hover{background:rgba(0,0,0,.2);}
+  main.article{max-width:800px;margin:0 auto;padding:30px 20px 60px;}
+  .breadcrumb{font-family:Arial,sans-serif;font-size:12px;color:#888;margin-bottom:16px;}
+  .breadcrumb a{color:var(--red);}
+  .tag{display:inline-block;background:var(--accent);color:#fff;font-family:Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;padding:4px 10px;margin-bottom:14px;letter-spacing:.5px;}
+  h1.art-title{font-size:34px;line-height:1.2;margin-bottom:14px;}
+  .byline{font-family:Arial,sans-serif;font-size:12px;color:#777;margin-bottom:26px;border-bottom:1px solid var(--border);padding-bottom:16px;}
+  .art-body p{margin-bottom:18px;font-size:18px;color:#222;}
+  .art-body h2{font-size:22px;margin:30px 0 14px;color:var(--dark);border-left:5px solid var(--accent);padding-left:12px;}
+  .art-body strong{color:var(--dark);}
+  .back-link{display:inline-block;margin-top:30px;font-family:Arial,sans-serif;font-size:13px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.5px;}
+  footer{background:var(--dark);color:#ccc;font-family:Arial,sans-serif;padding:40px 20px;margin-top:40px;text-align:center;font-size:12px;}
+  [data-en]{display:none;}
+  html.lang-en [data-fr]{display:none;}
+  html.lang-en [data-en]{display:inline;}
+  html.lang-en [data-en].block{display:block;}
+  @media(max-width:700px){h1.art-title{font-size:26px;}.art-body p{font-size:16px;}nav.main-nav ul{overflow-x:auto;}}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="date" id="dateLine"></div>
+  <div class="lang-toggle">
+    <button id="btnFr" class="active" onclick="setLang('fr')">FR</button>
+    <button id="btnEn" onclick="setLang('en')">EN</button>
+  </div>
+</div>
+<header class="main">
+  <div>
+    <a href="../index.html"><div class="logo"><span class="red">DIMA</span><span class="green">maghrib</span>2030</div></a>
+    <div class="tagline"><span data-fr>Magazine du Maroc — Tourisme, Investissement, Sport</span><span data-en>Morocco Magazine — Tourism, Investment, Sport</span></div>
+  </div>
+</header>
+<nav class="main-nav">
+  <ul>
+    <li><a href="../index.html#accueil"><span data-fr>Accueil</span><span data-en>Home</span></a></li>
+    <li><a href="../index.html#tourisme"><span data-fr>Tourisme</span><span data-en>Tourism</span></a></li>
+    <li><a href="../index.html#investissement"><span data-fr>Investissement</span><span data-en>Investment</span></a></li>
+    <li><a href="../index.html#sport"><span data-fr>Sport &amp; Mondial 2030</span><span data-en>Sport &amp; World Cup 2030</span></a></li>
+    <li><a href="../index.html#insider"><span data-fr>Insider Morocco</span><span data-en>Insider Morocco</span></a></li>
+    <li><a href="../index.html#videos"><span data-fr>Vidéos</span><span data-en>Videos</span></a></li>
+  </ul>
+</nav>
+<main class="article">
+  <div class="breadcrumb"><a href="../index.html">DIMAmaghrib2030</a> / <span data-fr>Insider Morocco</span><span data-en>Insider Morocco</span></div>
+  <span class="tag"><span data-fr>Insider Morocco</span><span data-en>Insider Morocco</span></span>
+  <h1 class="art-title"><span data-fr>Mon astuce de Marocain : ces 4 applis qui m'évitent (et t'éviteront) la galère du taxi</span><span data-en>The Local's Trick: 4 Apps That Save You From Taxi Hassles in Morocco</span></h1>
+  <div class="byline"><span data-fr>Par la rédaction DIMAmaghrib2030 — 16 août 2026</span><span data-en>By DIMAmaghrib2030 Editorial — August 16, 2026</span></div>
+  <div class="art-body">
+    <div data-fr>
+<p>Je vais être honnête avec toi : pendant des années, j'ai détesté prendre le taxi dans mon propre pays. Pas parce que les chauffeurs sont mauvais, la plupart sont adorables, mais parce que cette négociation systématique avant de monter me fatiguait. "Combien pour Guéliz ?" "150 dirhams." "Ahh non, c'est 30 normalement." Et on repart pour cinq minutes de discussion sur le trottoir, sous le soleil, avec les valises. Si tu es marocain, tu connais. Si tu es de passage, tu l'as probablement déjà vécu et détesté aussi.</p>
+
+<p>Alors laisse-moi te partager ce que moi et pas mal de gens autour de moi faisons maintenant : on ouvre une appli, on tape la destination, le prix s'affiche direct, et basta. Pas de discussion, pas de sourire forcé, pas de "ah mais c'est loin aujourd'hui". C'est devenu mon astuce numéro un pour me déplacer au Maroc sans prise de tête.</p>
+
+<h2>Roby, la nouvelle appli qui monte fort</h2>
+<p>J'ai lu récemment que Roby couvre maintenant plus de 15 600 taxis enregistrés, répartis entre Marrakech, Casablanca, Agadir, Rabat, Tanger et Fès. Ce qui m'a plu dans leur système, c'est que les chauffeurs paient un abonnement fixe de 490 dirhams par mois, plutôt qu'une commission prélevée sur chaque course. Concrètement, ça veut dire que le chauffeur n'a aucun intérêt à te faire tourner en rond ou à gonfler le prix, il gagne pareil que la course soit courte ou longue. Le tarif s'affiche avant même que tu confirmes la réservation, et la course est suivie par GPS du début à la fin, ce qui rassure pas mal quand tu voyages seule ou tard le soir. Sur certains trajets, ils proposent aussi le paiement sans espèces et le WiFi à bord, un vrai plus pour les visiteurs étrangers qui n'ont pas encore de cash marocain sur eux ou qui veulent juste rester connectés.</p>
+
+<h2>Careem, Heetch, Yassir : le choix, c'est la force</h2>
+<p>Roby n'est pas seule sur le marché, et c'est tant mieux. Careem, Heetch et Yassir tournent aussi dans les grandes villes marocaines, et honnêtement, mon conseil c'est de télécharger deux ou trois de ces applis en même temps. Pourquoi ? Parce que selon l'heure, le quartier ou la demande, une appli peut avoir plus de chauffeurs disponibles qu'une autre. Un vendredi soir à Casablanca, j'ai eu un chauffeur Yassir en trois minutes alors que l'autre appli m'affichait "aucun chauffeur disponible". Avoir le choix, c'est ça la vraie liberté de déplacement.</p>
+
+<h2>Mon conseil honnête, sans filtre</h2>
+<p>Je ne vais pas te dire que le taxi traditionnel est mauvais, il fait partie du charme marocain et beaucoup de chauffeurs sont réglo. Mais si tu veux éviter la galère du taxi, surtout dans une ville que tu ne connais pas bien, ces applications sont franchement devenues fiables. <strong>Télécharge Roby et une deuxième appli en backup avant ton voyage</strong>, active ta carte bancaire ou garde du cash pour les zones moins couvertes, et voilà. C'est exactement le genre de détail pratique que j'aurais aimé qu'on me dise avant mon premier vrai galère de taxi à Marrakech. Maintenant tu le sais, alors profite du trajet sans stresser sur le prix.</p>
+    </div>
+    <div data-en class="block">
+<p>I'm going to be honest with you: for years, I hated taking taxis in my own country. Not because the drivers are bad, most of them are genuinely lovely people, but because the haggling before every single ride wore me out. "How much to Guéliz?" "150 dirhams." "No way, it's usually 30." And then five minutes of back-and-forth on the sidewalk, in the sun, with your bags. If you're Moroccan, you know exactly what I mean. If you're a visitor, you've probably already lived through it and hated it too.</p>
+
+<p>So let me share what I, and a lot of people around me, do now: open an app, type the destination, see the price upfront, done. No negotiation, no forced smile, no "ah but it's far today." This has genuinely become my number one trick for getting around Morocco without the headache.</p>
+
+<h2>Roby, the app that's growing fast</h2>
+<p>I read recently that Roby now covers over 15,600 registered taxis, spread across Marrakech, Casablanca, Agadir, Rabat, Tangier and Fez. What I like about how they've set it up is that drivers pay a flat 490 MAD monthly subscription instead of a commission taken out of every ride. In practice, that means a driver has zero incentive to take you the long way or inflate the fare, they earn the same whether the ride is short or long. The fare shows up before you even confirm the booking, and every ride is GPS-tracked from start to finish, which is genuinely reassuring if you're traveling alone or it's late at night. On some rides they also offer cashless payment and onboard WiFi, which is a real plus for foreign visitors who don't have Moroccan cash on them yet or just want to stay connected.</p>
+
+<h2>Careem, Heetch, Yassir: more choice, more power</h2>
+<p>Roby isn't alone in this space, and honestly, that's a good thing. Careem, Heetch and Yassir also operate in Morocco's major cities, and my real advice is to download two or three of these apps at once. Why? Because depending on the time of day, the neighborhood, or demand, one app might have more drivers available than another. One Friday night in Casablanca, I got a Yassir driver in three minutes while another app was showing "no drivers available." Having options is what real freedom of movement looks like.</p>
+
+<h2>My honest, no-filter advice</h2>
+<p>I'm not going to tell you traditional taxis are bad, they're part of Morocco's charm and plenty of drivers are completely straight with you. But if you want to avoid taxi hassles, especially in a city you don't know well, these apps have genuinely become reliable. <strong>Download Roby plus a backup app before your trip</strong>, have your card linked or some cash ready for areas with less coverage, and that's it. This is exactly the kind of practical detail I wish someone had told me before my first real taxi ordeal in Marrakech. Now you know, so enjoy the ride without stressing over the price.</p>
+    </div>
+  </div>
+  <a class="back-link" href="../index.html"><span data-fr>&larr; Retour à l'accueil</span><span data-en>&larr; Back to home</span></a>
+</main>
+<footer>© 2026 DIMAmaghrib2030.com — <span data-fr>Tous droits réservés</span><span data-en>All rights reserved</span></footer>
+<script>
+  function setLang(lang){
+    document.documentElement.classList.toggle('lang-en', lang === 'en');
+    document.getElementById('btnFr').classList.toggle('active', lang === 'fr');
+    document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+    updateDate(lang);
+  }
+  function updateDate(lang){
+    var d = new Date(2026, 7, 16);
+    var opts = {weekday:'long', year:'numeric', month:'long', day:'numeric'};
+    var locale = lang === 'en' ? 'en-US' : 'fr-FR';
+    document.getElementById('dateLine').textContent = d.toLocaleDateString(locale, opts);
+  }
+  updateDate('fr');
+</script>
+</body>
+</html>

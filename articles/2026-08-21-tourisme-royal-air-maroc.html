@@ -1,123 +1,116 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casablanca s'envole : comment Royal Air Maroc réécrit la carte du tourisme marocain | DIMAmaghrib2030</title>
-  <meta name="description" content="Royal Air Maroc lance neuf nouvelles lignes en 2026, dont Los Angeles : comment la connectivité aérienne dope le tourisme marocain.">
-  <style>
-      :root{--red:#c8102e;--green:#006233;--dark:#111318;--gray-bg:#f4f4f4;--border:#e2e2e2;--accent:#c8102e;}
-      *{box-sizing:border-box;margin:0;padding:0;}
-      body{font-family:Georgia, 'Times New Roman', serif;color:var(--dark);background:#fff;line-height:1.6;}
-      a{color:inherit;text-decoration:none;}
-      img{max-width:100%;display:block;}
-      .topbar{background:var(--dark);color:#fff;font-family:Arial, sans-serif;font-size:12px;padding:6px 20px;display:flex;justify-content:space-between;align-items:center;}
-      .topbar .date{opacity:.75;}
-      .lang-toggle{display:flex;gap:6px;}
-      .lang-toggle button{background:transparent;border:1px solid #666;color:#fff;padding:3px 10px;border-radius:3px;cursor:pointer;font-size:11px;font-family:Arial,sans-serif;}
-      .lang-toggle button.active{background:var(--red);border-color:var(--red);}
-      header.main{padding:18px 20px;border-bottom:3px solid var(--dark);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
-      .logo{font-family:Arial, sans-serif;font-weight:900;font-size:30px;letter-spacing:-1px;}
-      .logo span.red{color:var(--red);}
-      .logo span.green{color:var(--green);}
-      .tagline{font-family:Arial, sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:2px;color:#666;margin-top:2px;}
-      nav.main-nav{background:var(--red);font-family:Arial, sans-serif;}
-      nav.main-nav ul{list-style:none;display:flex;flex-wrap:wrap;}
-      nav.main-nav a{display:block;color:#fff;padding:12px 18px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;}
-      nav.main-nav a:hover{background:rgba(0,0,0,.2);}
-      main.article{max-width:800px;margin:0 auto;padding:30px 20px 60px;}
-      .breadcrumb{font-family:Arial,sans-serif;font-size:12px;color:#888;margin-bottom:16px;}
-      .breadcrumb a{color:var(--red);}
-      .tag{display:inline-block;background:var(--accent);color:#fff;font-family:Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;padding:4px 10px;margin-bottom:14px;letter-spacing:.5px;}
-      h1.art-title{font-size:34px;line-height:1.2;margin-bottom:14px;}
-      .byline{font-family:Arial,sans-serif;font-size:12px;color:#777;margin-bottom:26px;border-bottom:1px solid var(--border);padding-bottom:16px;}
-      .art-body p{margin-bottom:18px;font-size:18px;color:#222;}
-      .art-body h2{font-size:22px;margin:30px 0 14px;color:var(--dark);border-left:5px solid var(--accent);padding-left:12px;}
-      .art-body strong{color:var(--dark);}
-      .back-link{display:inline-block;margin-top:30px;font-family:Arial,sans-serif;font-size:13px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.5px;}
-      footer{background:var(--dark);color:#ccc;font-family:Arial,sans-serif;padding:40px 20px;margin-top:40px;text-align:center;font-size:12px;}
-      [data-en]{display:none;}
-      html.lang-en [data-fr]{display:none;}
-      html.lang-en [data-en]{display:inline;}
-      html.lang-en [data-en].block{display:block;}
-      @media(max-width:700px){h1.art-title{font-size:26px;}.art-body p{font-size:16px;}nav.main-nav ul{overflow-x:auto;}}
-    </style>
-  </head>
-  <body>
-    <div class="topbar">
-        <div class="date" id="dateLine"></div>div>
-        <div class="lang-toggle">
-              <button id="btnFr" class="active" onclick="setLang('fr')">FR</button>button>
-              <button id="btnEn" onclick="setLang('en')">EN</button>button>
-        </div>div>
-    </div>div>
-    <header class="main">
-        <div>
-              <a href="../index.html"><div class="logo"><span class="red">DIMA</span>span><span class="green">maghrib</span>span>2030</div></a>a>
-              <div class="tagline"><span data-fr>Magazine du Maroc — Tourisme, Investissement, Sport</span>span><span data-en>Morocco Magazine — Tourism, Investment, Sport</span>span></div>
-        </div>
-    </header>header>
-    <nav class="main-nav">
-        <ul>
-              <li><a href="../index.html#accueil"><span data-fr>Accueil</span>span><span data-en>Home</span>span></a>a></li>
-            <li><a href="../index.html#tourisme"><span data-fr>Tourisme</span>span><span data-en>Tourism</span>span></a>a></li>
-            <li><a href="../index.html#investissement"><span data-fr>Investissement</span>span><span data-en>Investment</span>span></a>a></li>
-            <li><a href="../index.html#sport"><span data-fr>Sport &amp; Mondial 2030</span>span><span data-en>Sport &amp; World Cup 2030</span>span></a>a></li>
-            <li><a href="../index.html#insider"><span data-fr>Insider Morocco</span>span><span data-en>Insider Morocco</span>span></a>a></li>
-            <li><a href="../index.html#videos"><span data-fr>Vidéos</span>span><span data-en>Videos</span>span></a>a></li>
-        </ul>
-    </nav>nav>
-  <main class="article">
-    <div class="breadcrumb"><a href="../index.html">DIMAmaghrib2030</a>a> / <span data-fr>Tourisme</span>span><span data-en>Tourism</span>span></div>
-    <span class="tag"><span data-fr>Tourisme</span>span><span data-en>Tourism</span>span></span>span>
-    <h1 class="art-title"><span data-fr>Casablanca s'envole : comment Royal Air Maroc réécrit la carte du tourisme marocain</span>span><span data-en>Casablanca Takes Off: How Royal Air Maroc Is Rewriting Morocco's Tourism Map</span>span></h1>h1>
-    <div class="byline"><span data-fr>Par la rédaction DIMAmaghrib2030 — 21 août 2026</span>span><span data-en>By DIMAmaghrib2030 Editorial — August 21, 2026</span>span></div>
-    <div class="art-body">
-        <div data-fr>
-        <p>Le 7 juin dernier, un Boeing de Royal Air Maroc a décollé de l'aéroport Mohammed V de Casablanca en direction de Los Angeles. Un vol de plus dans le ciel, dira-t-on. En réalité, il s'agissait du premier signal d'une ambition bien plus vaste : faire de Casablanca la porte d'entrée aérienne entre l'Amérique, l'Afrique, l'Europe et, bientôt, l'Asie. Ce vol direct inédit vers la côte ouest des États-Unis n'est que la première d'une série de <strong>neuf nouvelles lignes internationales</strong> que la compagnie nationale déploie tout au long de 2026 — et derrière cette flotte qui s'étend, c'est toute l'économie touristique marocaine qui décolle avec elle.</p>
-        <h2>Neuf lignes, un même objectif : connecter le Maroc au monde</h2>
-        <p>Après Los Angeles, première historique de Royal Air Maroc vers la côte ouest des États-Unis, la compagnie a ouvert en juillet une liaison vers Lille, dans le nord de la France, qui vient densifier un réseau déjà fourni vers l'Hexagone. S'y ajoutent Bilbao et Alicante côté espagnol, Palma de Majorque et Vérone côté italien, ainsi que Tripoli et Beyrouth, qui renforcent la présence de la compagnie au Maghreb et au Moyen-Orient, et Pointe-Noire, au Congo, qui prolonge son maillage subsaharien. Direction plus inattendue : Saint-Pétersbourg, qui ouvre un nouveau couloir vers la Russie. Neuf destinations, quatre continents — la démonstration qu'<em>elle ne se contente plus</em> de relier le Maroc à ses marchés historiques, mais construit un véritable réseau mondial.</p>
-        <h2>Casablanca, futur carrefour aérien mondial</h2>
-        <p>Ces ouvertures ne racontent que la moitié de l'histoire. Royal Air Maroc muscle en parallèle ses fréquences vers São Paulo, Miami, Washington et Dubaï, quatre lignes stratégiques qui positionnent l'aéroport Mohammed V comme un point de correspondance entre les Amériques, l'Afrique et le Golfe, rapporte Travel And Tour World. L'ambition est assumée : transformer Casablanca en <strong>hub aérien mondial</strong>, à la manière d'Istanbul ou de Doha, capable d'absorber des passagers en simple transit aussi bien que des touristes en partance pour Marrakech ou Chefchaouen. Ce repositionnement coïncide, note le média spécialisé, avec l'émergence de la Chine, de l'Inde et de l'Amérique latine parmi les marchés émetteurs à la croissance la plus rapide vers le royaume — des bassins de centaines de millions de voyageurs potentiels que le Maroc peinait jusqu'ici à capter, faute de liaisons directes.</p>
-        <h2>La connectivité se lit déjà dans les chiffres</h2>
-        <p>Cette stratégie aérienne n'a rien d'un pari abstrait : elle se traduit déjà dans les résultats du tourisme marocain. Les recettes touristiques ont atteint <strong>64,89 milliards de dirhams</strong>strong>, environ 7,1 milliards de dollars, au premier semestre 2026, en hausse de 15,9 % sur un an, selon les chiffres publiés par Morocco World News en août 2026. Le royaume a par ailleurs accueilli 9,4 millions de touristes à fin juin 2026, soit une progression de 6 % sur un an, tandis que l'excédent de la balance touristique a bondi de 20,6 % pour atteindre 48,8 milliards de dirhams, rapporte Barlamantoday.</p>
-        <p>Pour Royal Air Maroc, chaque nouvelle ligne est un pari calculé sur la suite. Avec la Coupe du monde 2030, coorganisée avec l'Espagne et le Portugal, déjà à l'horizon, et des ambitions touristiques revues sans cesse à la hausse, le Maroc a besoin de portes d'entrée. Casablanca, elle, semble bien décidée à en devenir la principale.</p>
-        </div>
-        <div data-en class="block">
-        <p>On June 7, a Royal Air Maroc jet lifted off from Casablanca's Mohammed V Airport bound for Los Angeles, the airline's first-ever direct link to the US West Coast. It looked, on paper, like a routine schedule announcement. It was actually the opening act of a route-expansion campaign that, by the end of 2026, will have added <strong>nine new international destinations</strong> to Royal Air Maroc's network — and quietly become the engine behind Morocco's best tourism numbers in years. At its core, this is a story about Morocco's air connectivity, not just its arrival counts.</p>
-        <h2>Nine new routes, four continents</h2>
-        <p>The Los Angeles route, launched in June, was followed a month later by a new link to Lille in northern France, deepening an already dense network across the country. Spain gains two fresh connections, to Bilbao and Alicante, while Palma de Mallorca and Verona in Italy round out the European additions. Royal Air Maroc is also pushing into North Africa and the Middle East with new routes to Tripoli and Beirut, reaching further into sub-Saharan Africa with Pointe-Noire in the Republic of Congo, and opening an unexpected corridor to Saint Petersburg, Russia, according to Yabiladi. Taken together, the additions read less like a seasonal timetable update and more like a statement of intent: Royal Air Maroc wants a seat at every table at once.</p>
-        <h2>Building Casablanca into a global hub</h2>
-        <p>The new routes are only half the story. Royal Air Maroc is simultaneously boosting frequencies on existing long-haul lines to São Paulo, Miami, Washington and Dubai, four routes that position Mohammed V Airport as a connecting point between the Americas, Africa and the Gulf, according to Travel And Tour World. The strategy is explicit: turn Casablanca into a <strong>global aviation hub</strong> in the mold of Istanbul or Doha, <em>capable of routing transit passengers as easily as it welcomes tourists</em> headed for Marrakech or Chefchaouen. That repositioning lines up with a broader shift in where Morocco's visitors are coming from — Travel And Tour World notes that China, India and Latin America now rank among the country's fastest-growing inbound markets, three regions representing hundreds of millions of potential travelers that Morocco has historically struggled to reach without direct air links.</p>
-        <h2>The numbers behind the flight paths</h2>
-        <p>None of this is happening in a vacuum. Morocco's tourism revenue hit <strong>64.89 billion dirhams</strong>, roughly $7.1 billion, in the first half of 2026, up 15.9% year-on-year, according to figures published by Morocco World News in August 2026. The country welcomed 9.4 million visitors by the end of June, a 6% increase from a year earlier, while its travel balance surplus jumped 20.6% to reach 48.8 billion dirhams, Barlamantoday reported in late July.</p>
-        <p>With the 2030 World Cup, co-hosted with Spain and Portugal, already looming on the horizon, and Rabat's tourism ambitions climbing higher each year, Morocco needs entry points more than ever. Reaching the next tier of growth will depend less on marketing campaigns than on runways — on whether a traveler in Los Angeles, Saint Petersburg or São Paulo can actually reach Marrakech without three layovers. For now, Royal Air Maroc is betting that Casablanca can be the answer.</p>
-        </div>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casablanca s'envole : comment Royal Air Maroc réécrit la carte du tourisme marocain | DIMAmaghrib2030</title>
+<meta name="description" content="Royal Air Maroc lance neuf nouvelles lignes en 2026, dont Los Angeles : comment la connectivité aérienne dope le tourisme marocain.">
+<style>
+  :root{--red:#c8102e;--green:#006233;--dark:#111318;--gray-bg:#f4f4f4;--border:#e2e2e2;--accent:#c8102e;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:Georgia, 'Times New Roman', serif;color:var(--dark);background:#fff;line-height:1.6;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .topbar{background:var(--dark);color:#fff;font-family:Arial, sans-serif;font-size:12px;padding:6px 20px;display:flex;justify-content:space-between;align-items:center;}
+  .topbar .date{opacity:.75;}
+  .lang-toggle{display:flex;gap:6px;}
+  .lang-toggle button{background:transparent;border:1px solid #666;color:#fff;padding:3px 10px;border-radius:3px;cursor:pointer;font-size:11px;font-family:Arial,sans-serif;}
+  .lang-toggle button.active{background:var(--red);border-color:var(--red);}
+  header.main{padding:18px 20px;border-bottom:3px solid var(--dark);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
+  .logo{font-family:Arial, sans-serif;font-weight:900;font-size:30px;letter-spacing:-1px;}
+  .logo span.red{color:var(--red);}
+  .logo span.green{color:var(--green);}
+  .tagline{font-family:Arial, sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:2px;color:#666;margin-top:2px;}
+  nav.main-nav{background:var(--red);font-family:Arial, sans-serif;}
+  nav.main-nav ul{list-style:none;display:flex;flex-wrap:wrap;}
+  nav.main-nav a{display:block;color:#fff;padding:12px 18px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;}
+  nav.main-nav a:hover{background:rgba(0,0,0,.2);}
+  main.article{max-width:800px;margin:0 auto;padding:30px 20px 60px;}
+  .breadcrumb{font-family:Arial,sans-serif;font-size:12px;color:#888;margin-bottom:16px;}
+  .breadcrumb a{color:var(--red);}
+  .tag{display:inline-block;background:var(--accent);color:#fff;font-family:Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;padding:4px 10px;margin-bottom:14px;letter-spacing:.5px;}
+  h1.art-title{font-size:34px;line-height:1.2;margin-bottom:14px;}
+  .byline{font-family:Arial,sans-serif;font-size:12px;color:#777;margin-bottom:26px;border-bottom:1px solid var(--border);padding-bottom:16px;}
+  .art-body p{margin-bottom:18px;font-size:18px;color:#222;}
+  .art-body h2{font-size:22px;margin:30px 0 14px;color:var(--dark);border-left:5px solid var(--accent);padding-left:12px;}
+  .art-body strong{color:var(--dark);}
+  .back-link{display:inline-block;margin-top:30px;font-family:Arial,sans-serif;font-size:13px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.5px;}
+  footer{background:var(--dark);color:#ccc;font-family:Arial,sans-serif;padding:40px 20px;margin-top:40px;text-align:center;font-size:12px;}
+  [data-en]{display:none;}
+  html.lang-en [data-fr]{display:none;}
+  html.lang-en [data-en]{display:inline;}
+  html.lang-en [data-en].block{display:block;}
+  @media(max-width:700px){h1.art-title{font-size:26px;}.art-body p{font-size:16px;}nav.main-nav ul{overflow-x:auto;}}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="date" id="dateLine"></div>
+  <div class="lang-toggle">
+    <button id="btnFr" class="active" onclick="setLang('fr')">FR</button>
+    <button id="btnEn" onclick="setLang('en')">EN</button>
+  </div>
+</div>
+<header class="main">
+  <div>
+    <a href="../index.html"><div class="logo"><span class="red">DIMA</span><span class="green">maghrib</span>2030</div></a>
+    <div class="tagline"><span data-fr>Magazine du Maroc — Tourisme, Investissement, Sport</span><span data-en>Morocco Magazine — Tourism, Investment, Sport</span></div>
+  </div>
+</header>
+<nav class="main-nav">
+  <ul>
+    <li><a href="../index.html#accueil"><span data-fr>Accueil</span><span data-en>Home</span></a></li>
+    <li><a href="../index.html#tourisme"><span data-fr>Tourisme</span><span data-en>Tourism</span></a></li>
+    <li><a href="../index.html#investissement"><span data-fr>Investissement</span><span data-en>Investment</span></a></li>
+    <li><a href="../index.html#sport"><span data-fr>Sport &amp; Mondial 2030</span><span data-en>Sport &amp; World Cup 2030</span></a></li>
+    <li><a href="../index.html#insider"><span data-fr>Insider Morocco</span><span data-en>Insider Morocco</span></a></li>
+    <li><a href="../index.html#videos"><span data-fr>Vidéos</span><span data-en>Videos</span></a></li>
+  </ul>
+</nav>
+<main class="article">
+  <div class="breadcrumb"><a href="../index.html">DIMAmaghrib2030</a> / <span data-fr>Tourisme</span><span data-en>Tourism</span></div>
+  <span class="tag"><span data-fr>Tourisme</span><span data-en>Tourism</span></span>
+  <h1 class="art-title"><span data-fr>Casablanca s'envole : comment Royal Air Maroc réécrit la carte du tourisme marocain</span><span data-en>Casablanca Takes Off: How Royal Air Maroc Is Rewriting Morocco's Tourism Map</span></h1>
+  <div class="byline"><span data-fr>Par la rédaction DIMAmaghrib2030 — 21 août 2026</span><span data-en>By DIMAmaghrib2030 Editorial — August 21, 2026</span></div>
+  <div class="art-body">
+    <div data-fr>
+<p>Le 7 juin dernier, un Boeing de Royal Air Maroc a décollé de l'aéroport Mohammed V de Casablanca en direction de Los Angeles. Un vol de plus dans le ciel, dira-t-on. En réalité, il s'agissait du premier signal d'une ambition bien plus vaste : faire de Casablanca la porte d'entrée aérienne entre l'Amérique, l'Afrique, l'Europe et, bientôt, l'Asie. Ce vol direct inédit vers la côte ouest des États-Unis n'est que la première d'une série de <strong>neuf nouvelles lignes internationales</strong> que la compagnie nationale déploie tout au long de 2026 — et derrière cette flotte qui s'étend, c'est toute l'économie touristique marocaine qui décolle avec elle.</p>
+<h2>Neuf lignes, un même objectif : connecter le Maroc au monde</h2>
+<p>Après Los Angeles, première historique de Royal Air Maroc vers la côte ouest des États-Unis, la compagnie a ouvert en juillet une liaison vers Lille, dans le nord de la France, qui vient densifier un réseau déjà fourni vers l'Hexagone. S'y ajoutent Bilbao et Alicante côté espagnol, Palma de Majorque et Vérone côté italien, ainsi que Tripoli et Beyrouth, qui renforcent la présence de la compagnie au Maghreb et au Moyen-Orient, et Pointe-Noire, au Congo, qui prolonge son maillage subsaharien. Direction plus inattendue : Saint-Pétersbourg, qui ouvre un nouveau couloir vers la Russie. Neuf destinations, quatre continents — la démonstration qu'<em>elle ne se contente plus</em> de relier le Maroc à ses marchés historiques, mais construit un véritable réseau mondial.</p>
+<h2>Casablanca, futur carrefour aérien mondial</h2>
+<p>Ces ouvertures ne racontent que la moitié de l'histoire. Royal Air Maroc muscle en parallèle ses fréquences vers São Paulo, Miami, Washington et Dubaï, quatre lignes stratégiques qui positionnent l'aéroport Mohammed V comme un point de correspondance entre les Amériques, l'Afrique et le Golfe, rapporte Travel And Tour World. L'ambition est assumée : transformer Casablanca en <strong>hub aérien mondial</strong>, à la manière d'Istanbul ou de Doha, capable d'absorber des passagers en simple transit aussi bien que des touristes en partance pour Marrakech ou Chefchaouen. Ce repositionnement coïncide, note le média spécialisé, avec l'émergence de la Chine, de l'Inde et de l'Amérique latine parmi les marchés émetteurs à la croissance la plus rapide vers le royaume — des bassins de centaines de millions de voyageurs potentiels que le Maroc peinait jusqu'ici à capter, faute de liaisons directes.</p>
+<h2>La connectivité se lit déjà dans les chiffres</h2>
+<p>Cette stratégie aérienne n'a rien d'un pari abstrait : elle se traduit déjà dans les résultats du tourisme marocain. Les recettes touristiques ont atteint <strong>64,89 milliards de dirhams</strong>, environ 7,1 milliards de dollars, au premier semestre 2026, en hausse de 15,9 % sur un an, selon les chiffres publiés par Morocco World News en août 2026. Le royaume a par ailleurs accueilli 9,4 millions de touristes à fin juin 2026, soit une progression de 6 % sur un an, tandis que l'excédent de la balance touristique a bondi de 20,6 % pour atteindre 48,8 milliards de dirhams, rapporte Barlamantoday.</p>
+<p>Pour Royal Air Maroc, chaque nouvelle ligne est un pari calculé sur la suite. Avec la Coupe du monde 2030, coorganisée avec l'Espagne et le Portugal, déjà à l'horizon, et des ambitions touristiques revues sans cesse à la hausse, le Maroc a besoin de portes d'entrée. Casablanca, elle, semble bien décidée à en devenir la principale.</p>
     </div>
-    <a class="back-link" href="../index.html"><span data-fr>&larr; Retour à l'accueil</span>span><span data-en>&larr; Back to home</span>span></a>a>
-  </main>main>
-  <footer>© 2026 DIMAmaghrib2030.com — <span data-fr>Tous droits réservés</span>span><span data-en>All rights reserved</span>span></footer>
-  <script>
-      function setLang(lang){
-            document.documentElement.classList.toggle('lang-en', lang === 'en');
-            document.getElementById('btnFr').classList.toggle('active', lang === 'fr');
-            document.getElementById('btnEn').classList.toggle('active', lang === 'en');
-            updateDate(lang);
-      }
-      function updateDate(lang){
-            var d = new Date(2026, 7, 21);
-            var opts = {weekday:'long', year:'numeric', month:'long', day:'numeric'};
-            var locale = lang === 'en' ? 'en-US' : 'fr-FR';
-            document.getElementById('dateLine').textContent = d.toLocaleDateString(locale, opts);
-      }
-      updateDate('fr');
-  </script>
-  </body>
+    <div data-en class="block">
+<p>On June 7, a Royal Air Maroc jet lifted off from Casablanca's Mohammed V Airport bound for Los Angeles, the airline's first-ever direct link to the US West Coast. It looked, on paper, like a routine schedule announcement. It was actually the opening act of a route-expansion campaign that, by the end of 2026, will have added <strong>nine new international destinations</strong> to Royal Air Maroc's network — and quietly become the engine behind Morocco's best tourism numbers in years. At its core, this is a story about Morocco's air connectivity, not just its arrival counts.</p>
+<h2>Nine new routes, four continents</h2>
+<p>The Los Angeles route, launched in June, was followed a month later by a new link to Lille in northern France, deepening an already dense network across the country. Spain gains two fresh connections, to Bilbao and Alicante, while Palma de Mallorca and Verona in Italy round out the European additions. Royal Air Maroc is also pushing into North Africa and the Middle East with new routes to Tripoli and Beirut, reaching further into sub-Saharan Africa with Pointe-Noire in the Republic of Congo, and opening an unexpected corridor to Saint Petersburg, Russia, according to Yabiladi. Taken together, the additions read less like a seasonal timetable update and more like a statement of intent: Royal Air Maroc wants a seat at every table at once.</p>
+<h2>Building Casablanca into a global hub</h2>
+<p>The new routes are only half the story. Royal Air Maroc is simultaneously boosting frequencies on existing long-haul lines to São Paulo, Miami, Washington and Dubai, four routes that position Mohammed V Airport as a connecting point between the Americas, Africa and the Gulf, according to Travel And Tour World. The strategy is explicit: turn Casablanca into a <strong>global aviation hub</strong> in the mold of Istanbul or Doha, <em>capable of routing transit passengers as easily as it welcomes tourists</em> headed for Marrakech or Chefchaouen. That repositioning lines up with a broader shift in where Morocco's visitors are coming from — Travel And Tour World notes that China, India and Latin America now rank among the country's fastest-growing inbound markets, three regions representing hundreds of millions of potential travelers that Morocco has historically struggled to reach without direct air links.</p>
+<h2>The numbers behind the flight paths</h2>
+<p>None of this is happening in a vacuum. Morocco's tourism revenue hit <strong>64.89 billion dirhams</strong>, roughly $7.1 billion, in the first half of 2026, up 15.9% year-on-year, according to figures published by Morocco World News in August 2026. The country welcomed 9.4 million visitors by the end of June, a 6% increase from a year earlier, while its travel balance surplus jumped 20.6% to reach 48.8 billion dirhams, Barlamantoday reported in late July.</p>
+<p>With the 2030 World Cup, co-hosted with Spain and Portugal, already looming on the horizon, and Rabat's tourism ambitions climbing higher each year, Morocco needs entry points more than ever. Reaching the next tier of growth will depend less on marketing campaigns than on runways — on whether a traveler in Los Angeles, Saint Petersburg or São Paulo can actually reach Marrakech without three layovers. For now, Royal Air Maroc is betting that Casablanca can be the answer.</p>
+    </div>
+  </div>
+  <a class="back-link" href="../index.html"><span data-fr>&larr; Retour à l'accueil</span><span data-en>&larr; Back to home</span></a>
+</main>
+<footer>© 2026 DIMAmaghrib2030.com — <span data-fr>Tous droits réservés</span><span data-en>All rights reserved</span></footer>
+<script>
+  function setLang(lang){
+    document.documentElement.classList.toggle('lang-en', lang === 'en');
+    document.getElementById('btnFr').classList.toggle('active', lang === 'fr');
+    document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+    updateDate(lang);
+  }
+  function updateDate(lang){
+    var d = new Date(2026, 7, 21);
+    var opts = {weekday:'long', year:'numeric', month:'long', day:'numeric'};
+    var locale = lang === 'en' ? 'en-US' : 'fr-FR';
+    document.getElementById('dateLine').textContent = d.toLocaleDateString(locale, opts);
+  }
+  updateDate('fr');
+</script>
+</body>
 </html>
-
-  </script></footer></p></p></em></strong></strong></p></p></strong></em></p></h2></strong></p></li></li>
-        </ul>
-        </div>
-  </body>
-  </style></title>
-  </head>

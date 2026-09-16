@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AEVM Maroc : le vrai site officiel, les faux, et la règle des 96 heures | DIMAmaghrib2030</title>
+<meta name="description" content="L'AEVM Maroc est étendue à huit pays africains. Comment reconnaître le site officiel acces-maroc.ma et éviter les faux e-visa.">
+<style>
+  :root{--red:#c8102e;--green:#006233;--dark:#111318;--gray-bg:#f4f4f4;--border:#e2e2e2;--accent:#b8860b;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:Georgia, 'Times New Roman', serif;color:var(--dark);background:#fff;line-height:1.6;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .topbar{background:var(--dark);color:#fff;font-family:Arial, sans-serif;font-size:12px;padding:6px 20px;display:flex;justify-content:space-between;align-items:center;}
+  .topbar .date{opacity:.75;}
+  .lang-toggle{display:flex;gap:6px;}
+  .lang-toggle button{background:transparent;border:1px solid #666;color:#fff;padding:3px 10px;border-radius:3px;cursor:pointer;font-size:11px;font-family:Arial,sans-serif;}
+  .lang-toggle button.active{background:var(--red);border-color:var(--red);}
+  header.main{padding:18px 20px;border-bottom:3px solid var(--dark);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
+  .logo{font-family:Arial, sans-serif;font-weight:900;font-size:30px;letter-spacing:-1px;}
+  .logo span.red{color:var(--red);}
+  .logo span.green{color:var(--green);}
+  .tagline{font-family:Arial, sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:2px;color:#666;margin-top:2px;}
+  nav.main-nav{background:var(--red);font-family:Arial, sans-serif;}
+  nav.main-nav ul{list-style:none;display:flex;flex-wrap:wrap;}
+  nav.main-nav a{display:block;color:#fff;padding:12px 18px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;}
+  nav.main-nav a:hover{background:rgba(0,0,0,.2);}
+  main.article{max-width:800px;margin:0 auto;padding:30px 20px 60px;}
+  .breadcrumb{font-family:Arial,sans-serif;font-size:12px;color:#888;margin-bottom:16px;}
+  .breadcrumb a{color:var(--red);}
+  .tag{display:inline-block;background:var(--accent);color:#fff;font-family:Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;padding:4px 10px;margin-bottom:14px;letter-spacing:.5px;}
+  h1.art-title{font-size:34px;line-height:1.2;margin-bottom:14px;}
+  .byline{font-family:Arial,sans-serif;font-size:12px;color:#777;margin-bottom:26px;border-bottom:1px solid var(--border);padding-bottom:16px;}
+  .art-body p{margin-bottom:18px;font-size:18px;color:#222;}
+  .art-body h2{font-size:22px;margin:30px 0 14px;color:var(--dark);border-left:5px solid var(--accent);padding-left:12px;}
+  .art-body strong{color:var(--dark);}
+  .back-link{display:inline-block;margin-top:30px;font-family:Arial,sans-serif;font-size:13px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.5px;}
+  footer{background:var(--dark);color:#ccc;font-family:Arial,sans-serif;padding:40px 20px;margin-top:40px;text-align:center;font-size:12px;}
+  [data-en]{display:none;}
+  html.lang-en [data-fr]{display:none;}
+  html.lang-en [data-en]{display:inline;}
+  html.lang-en [data-en].block{display:block;}
+  @media(max-width:700px){h1.art-title{font-size:26px;}.art-body p{font-size:16px;}nav.main-nav ul{overflow-x:auto;}}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="date" id="dateLine"></div>
+  <div class="lang-toggle">
+    <button id="btnFr" class="active" onclick="setLang('fr')">FR</button>
+    <button id="btnEn" onclick="setLang('en')">EN</button>
+  </div>
+</div>
+<header class="main">
+  <div>
+    <a href="../index.html"><div class="logo"><span class="red">DIMA</span><span class="green">maghrib</span>2030</div></a>
+    <div class="tagline"><span data-fr>Magazine du Maroc — Tourisme, Investissement, Sport</span><span data-en>Morocco Magazine — Tourism, Investment, Sport</span></div>
+  </div>
+</header>
+<nav class="main-nav">
+  <ul>
+    <li><a href="../index.html#accueil"><span data-fr>Accueil</span><span data-en>Home</span></a></li>
+    <li><a href="../index.html#tourisme"><span data-fr>Tourisme</span><span data-en>Tourism</span></a></li>
+    <li><a href="../index.html#investissement"><span data-fr>Investissement</span><span data-en>Investment</span></a></li>
+    <li><a href="../index.html#sport"><span data-fr>Sport &amp; Mondial 2030</span><span data-en>Sport &amp; World Cup 2030</span></a></li>
+    <li><a href="../index.html#insider"><span data-fr>Insider Morocco</span><span data-en>Insider Morocco</span></a></li>
+    <li><a href="../index.html#videos"><span data-fr>Vidéos</span><span data-en>Videos</span></a></li>
+  </ul>
+</nav>
+<main class="article">
+  <div class="breadcrumb"><a href="../index.html">DIMAmaghrib2030</a> / <span data-fr>Insider Morocco</span><span data-en>Insider Morocco</span></div>
+  <span class="tag"><span data-fr>Insider Morocco</span><span data-en>Insider Morocco</span></span>
+  <h1 class="art-title"><span data-fr>AEVM Maroc : le vrai site officiel, les faux, et la règle des 96 heures</span><span data-en>Morocco's AEVM: Spotting the Real Portal, and the 96-Hour Rule</span></h1>
+  <div class="byline"><span data-fr>Par la rédaction DIMAmaghrib2030 — 16 septembre 2026</span><span data-en>By DIMAmaghrib2030 Editorial — September 16, 2026</span></div>
+  <div class="art-body">
+    <div data-fr>
+<p>Je vais être direct avec vous, parce que je reçois ce message au moins deux fois par semaine depuis des cousins, des amis d'amis, des gens que je ne connais même pas : « J'ai payé 60 euros pour mon autorisation de voyage au Maroc, c'est normal ? » Non. Ce n'est pas normal. Et si vous lisez ceci avant d'avoir payé, tant mieux, on va éviter ça ensemble.</p>
+
+<p>Petit rappel du contexte. L'AEVM, l'autorisation électronique de voyage vers le Maroc, est arrivée en septembre 2025, au moment où le pays se préparait à accueillir la CAN. L'idée à l'époque, c'était de sécuriser et fluidifier les flux d'entrée pendant un événement qui allait faire venir énormément de monde. Beaucoup pensaient que ça disparaîtrait avec le dernier coup de sifflet. Ça n'a pas disparu. Le dispositif a été maintenu, puis élargi : il concerne aujourd'hui les ressortissants de huit pays africains — l'Algérie, le Burkina Faso, le Cap-Vert, le Gabon, le Niger, le Sénégal, le Togo et la Tunisie.</p>
+
+<h2>Le seul site officiel, c'est acces-maroc.ma. Point.</h2>
+
+<p>Voilà le nœud du problème. Tapez « <em>autorisation électronique voyage Maroc 2026</em> » dans Google et vous allez tomber sur une dizaine de sites qui ont l'air parfaitement crédibles : drapeau marocain, formulaire propre, bouton vert « Commencer ma demande », parfois même un faux numéro de dossier. Ce sont des intermédiaires privés. Ils ne sont pas tous illégaux, certains facturent honnêtement des « frais de service », mais le service en question consiste à recopier vos informations dans un formulaire gratuit que vous auriez pu remplir vous-même en quinze minutes. D'autres sont carrément des arnaques : ils encaissent et disparaissent, ou pire, ils gardent une copie de votre passeport.</p>
+
+<p>Le repère est simple et je vous demande de le mémoriser : <strong>acces-maroc.ma</strong>. C'est le portail gouvernemental, c'est le seul canal officiel. Un <strong>.ma</strong>, pas un .com, pas un .org, pas un « morocco-evisa-official ». Si l'adresse dans la barre de votre navigateur ne dit pas exactement ça, fermez l'onglet. Et méfiez-vous du référencement : les vrais services publics n'achètent pas de publicité Google, donc les premiers résultats sponsorisés sont presque systématiquement des revendeurs. Descendez dans la page.</p>
+
+<h2>La règle des 96 heures, celle qui bloque les gens à l'embarquement</h2>
+
+<p>La demande doit être déposée <strong>au moins 96 heures avant le départ</strong>. Quatre jours pleins. Ce n'est pas une recommandation, c'est la règle, et c'est là que ça se joue mal. J'ai vu des familles refoulées au comptoir d'enregistrement parce qu'elles avaient fait la demande la veille en pensant que ça passerait. La compagnie aérienne ne vous laissera pas monter sans autorisation valide, et personne à l'aéroport n'a le pouvoir de régulariser ça sur place.</p>
+
+<p>Préparez vos pièces avant de commencer, ça vous évitera de recommencer trois fois : un passeport valable au moins <strong>six mois</strong>, une photo numérique, un billet retour, une assurance voyage et un justificatif d'hébergement — réservation d'hôtel, ou attestation si vous logez chez de la famille. Scannez tout proprement avant d'ouvrir le formulaire.</p>
+
+<h2>Et une fois sur place : attention aux « guides »</h2>
+
+<p>Puisqu'on parle de ce qui coûte cher aux visiteurs, autant finir par là. À Marrakech surtout, on vous abordera pour vous « accompagner » dans la médina. Sachez que l'exercice non autorisé de la profession de guide est un délit au Maroc, réprimé par la loi 05-12, avec des peines allant de trois mois à deux ans. Les brigades touristiques mènent des opérations régulières contre les faux guides. Ce n'est pas vous qu'on poursuit, mais vous risquez de vous retrouver au milieu d'un contrôle, avec votre journée gâchée et une note salée. Demandez la carte professionnelle. Un vrai guide la sort sans discuter.</p>
+
+<p>Bref : <em>acces-maroc.ma</em>, quatre jours d'avance, zéro euro de frais de service. Bienvenue chez nous.</p>
+    </div>
+    <div data-en class="block">
+<p>Let me be blunt, because I get this message at least twice a week — from cousins, friends of friends, people I have never met: "I paid 60 euros for my Morocco travel authorization, is that normal?" No. It is not normal. And if you are reading this before you have paid, good, let's fix that now.</p>
+
+<p>Some context first. The AEVM — Morocco's electronic travel authorization — launched in September 2025, when the country was preparing to host the Africa Cup of Nations. The point back then was to secure and smooth entry flows during an event that was going to bring in enormous numbers of people. A lot of us assumed it would quietly vanish after the final whistle. It did not. The system was kept, then widened. It now applies to nationals of eight African countries: Algeria, Burkina Faso, Cape Verde, Gabon, Niger, Senegal, Togo and Tunisia.</p>
+
+<h2>There is one official site. It is acces-maroc.ma.</h2>
+
+<p>Here is where the trouble starts. Search for <em>Morocco electronic travel authorization</em> and you will get a dozen sites that look entirely convincing: Moroccan flag, clean form, green "Start my application" button, sometimes even a fake reference number to make you feel processed. These are private middlemen. Not all of them are illegal — some charge an honest "service fee" — but the service consists of retyping your details into a free government form you could have filled in yourself in fifteen minutes. Others are straightforward scams: they take your money and disappear, or worse, they keep a copy of your passport.</p>
+
+<p>The test is simple, and I want you to memorise it: <strong>acces-maroc.ma</strong>. That is the government portal and the only official channel. A <strong>.ma</strong> domain — not .com, not .org, not "morocco-evisa-official-portal". If the address bar does not say exactly that, close the tab. And be sceptical of search rankings: real public services do not buy Google ads, so the sponsored results at the top are almost always resellers. Scroll down.</p>
+
+<h2>The 96-hour rule, which is what actually catches people</h2>
+
+<p>Your application has to be filed <strong>at least 96 hours before departure</strong>. Four full days. This is not a friendly suggestion, it is the rule, and it is where things go badly wrong. I have watched families turned away at the check-in desk because they applied the night before and assumed it would come through. The airline will not board you without a valid authorization, and nobody at the airport has the power to sort it out on the spot.</p>
+
+<p>Get your documents together before you open the form, so you are not restarting it three times: a passport valid for at least <strong>six months</strong>, a digital photo, a return ticket, travel insurance, and proof of accommodation — a hotel booking, or a letter if you are staying with family. Scan everything properly first.</p>
+
+<h2>Once you land: a word about "guides"</h2>
+
+<p>Since we are on the subject of things that cost visitors money, let's finish there. In Marrakech especially, someone will offer to "walk you through" the medina. Working as an unlicensed guide is a criminal offence in Morocco, prosecuted under law 05-12, carrying three months to two years. The tourist brigades run periodic sweeps against fake guides. You are not the one being prosecuted, but you can easily end up in the middle of a check, with your afternoon ruined and an inflated bill. Ask to see the professional licence card. A real guide produces it without any drama.</p>
+
+<p>So: <em>acces-maroc.ma</em>, four days ahead, zero service fees. See you here.</p>
+    </div>
+  </div>
+  <a class="back-link" href="../index.html"><span data-fr>&larr; Retour à l'accueil</span><span data-en>&larr; Back to home</span></a>
+</main>
+<footer>© 2026 DIMAmaghrib2030.com — <span data-fr>Tous droits réservés</span><span data-en>All rights reserved</span></footer>
+<script>
+  function setLang(lang){
+    document.documentElement.classList.toggle('lang-en', lang === 'en');
+    document.getElementById('btnFr').classList.toggle('active', lang === 'fr');
+    document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+    updateDate(lang);
+  }
+  function updateDate(lang){
+    var d = new Date(2026, 8, 16);
+    var opts = {weekday:'long', year:'numeric', month:'long', day:'numeric'};
+    var locale = lang === 'en' ? 'en-US' : 'fr-FR';
+    document.getElementById('dateLine').textContent = d.toLocaleDateString(locale, opts);
+  }
+  updateDate('fr');
+</script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>« Vous avez une amende impayée » : le SMS piège que tout Marocain reçoit, et comment je le repère | DIMAmaghrib2030</title>
+<meta name="description" content="Faux SMS d'amende routière, appels « tombola », faux billets : mes réflexes de Marocain pour repérer l'arnaque en quelques secondes.">
+<style>
+  :root{--red:#c8102e;--green:#006233;--dark:#111318;--gray-bg:#f4f4f4;--border:#e2e2e2;--accent:#b8860b;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:Georgia, 'Times New Roman', serif;color:var(--dark);background:#fff;line-height:1.6;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .topbar{background:var(--dark);color:#fff;font-family:Arial, sans-serif;font-size:12px;padding:6px 20px;display:flex;justify-content:space-between;align-items:center;}
+  .topbar .date{opacity:.75;}
+  .lang-toggle{display:flex;gap:6px;}
+  .lang-toggle button{background:transparent;border:1px solid #666;color:#fff;padding:3px 10px;border-radius:3px;cursor:pointer;font-size:11px;font-family:Arial,sans-serif;}
+  .lang-toggle button.active{background:var(--red);border-color:var(--red);}
+  header.main{padding:18px 20px;border-bottom:3px solid var(--dark);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
+  .logo{font-family:Arial, sans-serif;font-weight:900;font-size:30px;letter-spacing:-1px;}
+  .logo span.red{color:var(--red);}
+  .logo span.green{color:var(--green);}
+  .tagline{font-family:Arial, sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:2px;color:#666;margin-top:2px;}
+  nav.main-nav{background:var(--red);font-family:Arial, sans-serif;}
+  nav.main-nav ul{list-style:none;display:flex;flex-wrap:wrap;}
+  nav.main-nav a{display:block;color:#fff;padding:12px 18px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;}
+  nav.main-nav a:hover{background:rgba(0,0,0,.2);}
+  main.article{max-width:800px;margin:0 auto;padding:30px 20px 60px;}
+  .breadcrumb{font-family:Arial,sans-serif;font-size:12px;color:#888;margin-bottom:16px;}
+  .breadcrumb a{color:var(--red);}
+  .tag{display:inline-block;background:var(--accent);color:#fff;font-family:Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;padding:4px 10px;margin-bottom:14px;letter-spacing:.5px;}
+  h1.art-title{font-size:34px;line-height:1.2;margin-bottom:14px;}
+  .byline{font-family:Arial,sans-serif;font-size:12px;color:#777;margin-bottom:26px;border-bottom:1px solid var(--border);padding-bottom:16px;}
+  .art-body p{margin-bottom:18px;font-size:18px;color:#222;}
+  .art-body h2{font-size:22px;margin:30px 0 14px;color:var(--dark);border-left:5px solid var(--accent);padding-left:12px;}
+  .art-body strong{color:var(--dark);}
+  .back-link{display:inline-block;margin-top:30px;font-family:Arial,sans-serif;font-size:13px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.5px;}
+  footer{background:var(--dark);color:#ccc;font-family:Arial,sans-serif;padding:40px 20px;margin-top:40px;text-align:center;font-size:12px;}
+  [data-en]{display:none;}
+  html.lang-en [data-fr]{display:none;}
+  html.lang-en [data-en]{display:inline;}
+  html.lang-en [data-en].block{display:block;}
+  @media(max-width:700px){h1.art-title{font-size:26px;}.art-body p{font-size:16px;}nav.main-nav ul{overflow-x:auto;}}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="date" id="dateLine"></div>
+  <div class="lang-toggle">
+    <button id="btnFr" class="active" onclick="setLang('fr')">FR</button>
+    <button id="btnEn" onclick="setLang('en')">EN</button>
+  </div>
+</div>
+<header class="main">
+  <div>
+    <a href="../index.html"><div class="logo"><span class="red">DIMA</span><span class="green">maghrib</span>2030</div></a>
+    <div class="tagline"><span data-fr>Magazine du Maroc — Tourisme, Investissement, Sport</span><span data-en>Morocco Magazine — Tourism, Investment, Sport</span></div>
+  </div>
+</header>
+<nav class="main-nav">
+  <ul>
+    <li><a href="../index.html#accueil"><span data-fr>Accueil</span><span data-en>Home</span></a></li>
+    <li><a href="../index.html#tourisme"><span data-fr>Tourisme</span><span data-en>Tourism</span></a></li>
+    <li><a href="../index.html#investissement"><span data-fr>Investissement</span><span data-en>Investment</span></a></li>
+    <li><a href="../index.html#sport"><span data-fr>Sport &amp; Mondial 2030</span><span data-en>Sport &amp; World Cup 2030</span></a></li>
+    <li><a href="../index.html#insider"><span data-fr>Insider Morocco</span><span data-en>Insider Morocco</span></a></li>
+    <li><a href="../index.html#videos"><span data-fr>Vidéos</span><span data-en>Videos</span></a></li>
+  </ul>
+</nav>
+<main class="article">
+  <div class="breadcrumb"><a href="../index.html">DIMAmaghrib2030</a> / <span data-fr>Insider Morocco</span><span data-en>Insider Morocco</span></div>
+  <span class="tag"><span data-fr>Insider Morocco</span><span data-en>Insider Morocco</span></span>
+  <h1 class="art-title"><span data-fr>« Vous avez une amende impayée » : le SMS piège que tout Marocain reçoit, et comment je le repère</span><span data-en>"You Have an Unpaid Fine": The Moroccan SMS Scam I See Every Month, and How to Spot It in 10 Seconds</span></h1>
+  <div class="byline"><span data-fr>Par la rédaction DIMAmaghrib2030 — 15 octobre 2026</span><span data-en>By DIMAmaghrib2030 Editorial — October 15, 2026</span></div>
+  <div class="art-body">
+    <div data-fr>
+<p>Si vous vivez au Maroc, ou même si vous y passez deux semaines au volant d'une voiture de location, vous avez sans doute déjà vu ce message : un SMS en arabe qui vous annonce une amende routière impayée et vous demande de régler « rapidement ». Je le reçois régulièrement, mes cousins aussi, et ma voisine a failli tomber dedans. Voici comment je le repère, et ce que je fais à la place.</p>
+<h2>Le SMS d'amende : un classique qui court toujours</h2>
+<p>Petit rappel, parce que ce message circule encore. En avril 2026, la DGSSI a publié une alerte, relayée par Le360 le 3 avril : des SMS en arabe, envoyés depuis des numéros étrangers commençant par <strong>+44</strong> ou <strong>+63</strong>, se font passer pour le ministère de la Justice et prétendent que vous avez une amende routière à régler. Le lien mène vers une imitation du portail officiel des amendes, qui réclame votre nom, votre CIN, le numéro de votre carte, sa date d'expiration, le CVV et, pour finir, le <strong>code OTP</strong> envoyé par votre banque.</p>
+<p>Ce dernier détail est le piège. Avec le CVV et l'OTP, l'escroc n'a plus besoin de rien d'autre. C'est ce qui rend ce <em>phishing bancaire au Maroc</em> si dangereux : la page a l'air sérieuse, et on est pressé de « régler » pour éviter une majoration.</p>
+<p>Mon test des dix secondes : l'expéditeur est-il un numéro étranger ? Le lien se termine-t-il par <strong>.gov.ma</strong> ? Selon la DGSSI, les autorités ne contactent pas les citoyens depuis des numéros étrangers, et tous les sites officiels du gouvernement marocain utilisent le domaine .gov.ma. Si un seul critère cloche, je supprime. Pour vérifier une vraie amende, je passe uniquement par les canaux officiels : amendes.justice.gov.ma ou l'application « Infractions Routières ».</p>
+<p>Un mot pour les visiteurs avec une voiture de location : ces faux messages vous visent aussi. Vous n'avez peut-être aucune idée de ce qui est normal, donc la menace paraît crédible. Elle ne l'est pas. Ne cliquez pas, et demandez à votre loueur si vous avez un doute.</p>
+<h2>Quand c'est un appel : la fausse tombola</h2>
+<p>Les arnaques ne se limitent pas aux SMS. TelQuel racontait le 24 juillet 2026 l'histoire d'une femme appelée par une soi-disant « tombola » d'une marque d'électroménager : elle avait gagné 10 000 MAD. Un deuxième appel lui a demandé les trois chiffres au dos de sa carte. En quelques minutes, près de 9 000 MAD ont quitté son compte.</p>
+<p>Ce qui me frappe, c'est la mécanique : on vous annonce une bonne nouvelle, puis on vous met dans l'émotion et la précipitation. Personne ne gagne un concours auquel il n'a pas participé. Et, règle d'or, <strong>aucune vraie entreprise ne vous demande votre CVV au téléphone</strong>.</p>
+<h2>Faux billets de concert, et mes réflexes</h2>
+<p>Autre piège de la saison, signalé par Le Desk le 11 août 2026 : une arnaque aux faux billets de concert sur une plateforme de billetterie en ligne. Avec les festivals et les grands soirs qui font vibrer le pays, l'envie de décrocher une place à tout prix est exactement ce qu'exploitent ces vendeurs.</p>
+<p>Voici ce que je fais, et ce que je conseille à tous mes proches :</p>
+<p><strong>1. Ne jamais donner le code OTP ni le CVV.</strong> À personne, ni par SMS, ni au téléphone, même à quelqu'un qui dit appartenir à ma banque.</p>
+<p><strong>2. Vérifier le domaine .gov.ma</strong> avant de saisir quoi que ce soit sur un site « administratif ».</p>
+<p><strong>3. Raccrocher et rappeler ma banque</strong> moi-même, avec le numéro figurant sur ma carte ou sur le site officiel, pas celui que l'on m'a donné.</p>
+<p><strong>4. N'acheter mes billets qu'auprès de vendeurs officiels.</strong> Une « bonne affaire » d'un inconnu sur les réseaux, je passe mon chemin.</p>
+<p>Si vous avez déjà cliqué et saisi des données, appelez immédiatement votre banque pour bloquer la carte. Et partagez cet article avec vos parents : ce sont souvent eux que ces messages visent le plus. L'arnaque ne marche que si on se précipite, alors prenez dix secondes.</p>
+    </div>
+    <div data-en class="block">
+<p>If you live in Morocco, or even if you are just here for two weeks driving a rental car, you have probably seen this message: an Arabic SMS telling you that you owe an unpaid traffic fine and must pay "quickly". I get it regularly, my cousins get it, and my neighbour nearly fell for it. Here is how I spot it, and what I do instead.</p>
+<h2>The fine SMS: an old trick that is still circulating</h2>
+<p>Consider this a reminder, because the message is still going around. In April 2026 the DGSSI, Morocco's cybersecurity authority, issued an alert, reported by Le360 on 3 April. The texts are in Arabic, sent from foreign numbers starting with <strong>+44</strong> or <strong>+63</strong>, and they pose as the Ministry of Justice claiming you have a traffic fine to settle. The link leads to a fake copy of the official fines portal that asks for your name, national ID, card number, expiry date, CVV and finally the <strong>OTP code</strong> your bank sends you.</p>
+<p>That last part is the trap. With the CVV and the OTP, the scammer needs nothing else. This is why this kind of <em>Morocco phishing</em> is so effective: the page looks serious, and you want to pay fast to avoid a penalty.</p>
+<p>My ten-second test: is the sender a foreign number? Does the link end in <strong>.gov.ma</strong>? According to the DGSSI, authorities do not contact citizens from foreign numbers, and every official Moroccan government site uses .gov.ma. If either check fails, I delete it. To check a real fine, I only use the official channels: amendes.justice.gov.ma or the "Infractions Routières" app.</p>
+<p>A word for visitors in rental cars: these fake messages can reach you too. You may have no idea what is normal here, so the threat feels believable. It is not. Do not click, and ask your rental company if you are unsure.</p>
+<h2>When it is a phone call: the fake raffle</h2>
+<p>Scams are not only about texts. On 24 July 2026, TelQuel told the story of a woman who got a call from a fake "raffle" run in the name of an appliance brand, saying she had won 10,000 MAD. A second call asked for the three digits on the back of her card. Within minutes, nearly 9,000 MAD had left her account.</p>
+<p>What strikes me is the mechanism: good news first, then emotion and rush. Nobody wins a contest they never entered. And the golden rule: <strong>no genuine company asks for your CVV over the phone</strong>.</p>
+<h2>Fake concert tickets, and my habits</h2>
+<p>Another trap of the season, reported by Le Desk on 11 August 2026: a fake concert-ticket scam on an online ticketing platform. With festivals and big nights lighting up the country, the urge to grab a seat at any price is exactly what these sellers exploit.</p>
+<p>Here is what I do, and what I tell everyone close to me:</p>
+<p><strong>1. Never share an OTP or CVV.</strong> With anyone, by text or by phone, even someone claiming to be from my bank.</p>
+<p><strong>2. Check the .gov.ma domain</strong> before typing anything into an "official" website.</p>
+<p><strong>3. Hang up and call my bank myself,</strong> using the number on my card or the official site, never the one I was given.</p>
+<p><strong>4. Buy tickets only from official sellers.</strong> A "great deal" from a stranger on social media, I walk away.</p>
+<p>If you have already clicked and entered details, call your bank right away to block your card. And share this with your parents: they are often the main target. These scams only work if you rush, so take ten seconds.</p>
+    </div>
+  </div>
+  <a class="back-link" href="../index.html"><span data-fr>&larr; Retour à l'accueil</span><span data-en>&larr; Back to home</span></a>
+</main>
+<footer>© 2026 DIMAmaghrib2030.com — <span data-fr>Tous droits réservés</span><span data-en>All rights reserved</span></footer>
+<script>
+  function setLang(lang){
+    document.documentElement.classList.toggle('lang-en', lang === 'en');
+    document.getElementById('btnFr').classList.toggle('active', lang === 'fr');
+    document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+    updateDate(lang);
+  }
+  function updateDate(lang){
+    var d = new Date(2026, 9, 15);
+    var opts = {weekday:'long', year:'numeric', month:'long', day:'numeric'};
+    var locale = lang === 'en' ? 'en-US' : 'fr-FR';
+    document.getElementById('dateLine').textContent = d.toLocaleDateString(locale, opts);
+  }
+  updateDate('fr');
+</script>
+</body>
+</html>
